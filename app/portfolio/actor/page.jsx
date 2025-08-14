@@ -254,20 +254,120 @@ export default function ActorPortfolioPage() {
             ))}
           </div>
 
-          <div className="mt-12 space-y-6">
-            <h3 className="text-2xl font-bold text-gray-800">Past Performances</h3>
-            <ul className="space-y-3">
-              <li>Supna Ka Sapna | Hindi | JNU, Delhi</li>
-              <li>Mime Shows | Non-verbal | Patna</li>
-              <li>Biniya | Maithili | Patna</li>
-            </ul>
+          <div className="mt-12 space-y-8">
+            {/* Past Performances Table */}
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">Past Performances</h3>
+              <div className="overflow-hidden rounded-lg shadow-lg border border-gray-200">
+                <table className="min-w-full divide-y divide-gray-200">
+                  <thead className="bg-gradient-to-r from-green-500 to-pink-500">
+                    <tr>
+                      <th className="px-6 py-4 text-left text-xs font-medium text-white uppercase tracking-wider">
+                        Performance
+                      </th>
+                      <th className="px-6 py-4 text-left text-xs font-medium text-white uppercase tracking-wider">
+                        Language
+                      </th>
+                      <th className="px-6 py-4 text-left text-xs font-medium text-white uppercase tracking-wider">
+                        Venue
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-gray-200">
+                    <tr className="hover:bg-gray-50 transition-colors duration-200">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                        Supna Ka Sapna
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                        Hindi
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                        JNU, Delhi
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors duration-200">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                        Mime Shows
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                        Non-verbal
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                        Patna
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors duration-200">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                        Biniya
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                        Maithili
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                        Patna
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-            <h3 className="text-2xl font-bold text-gray-800 mt-8">Upcoming Stage Projects</h3>
-            <ul className="space-y-3">
-              <li>Mime Show | Non-verbal | International Project</li>
-              <li>Stage Play | Hindi and Maithili | National Project</li>
-              <li>Solo Show | Multilingual | National Project</li>
-            </ul>
+            {/* Upcoming Stage Projects Table */}
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">Upcoming Stage Projects</h3>
+              <div className="overflow-hidden rounded-lg shadow-lg border border-gray-200">
+                <table className="min-w-full divide-y divide-gray-200">
+                  <thead className="bg-gradient-to-r from-pink-500 to-green-500">
+                    <tr>
+                      <th className="px-6 py-4 text-left text-xs font-medium text-white uppercase tracking-wider">
+                        Project
+                      </th>
+                      <th className="px-6 py-4 text-left text-xs font-medium text-white uppercase tracking-wider">
+                        Language
+                      </th>
+                      <th className="px-6 py-4 text-left text-xs font-medium text-white uppercase tracking-wider">
+                        Scope
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-gray-200">
+                    <tr className="hover:bg-gray-50 transition-colors duration-200">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                        Mime Show
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                        Non-verbal
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                        International Project
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors duration-200">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                        Stage Play
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                        Hindi and Maithili
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                        National Project
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors duration-200">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                        Solo Show
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                        Multilingual
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                        National Project
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -187,60 +187,17 @@ const testimonials = [
       "An inspiring and transformative workshop—our students discovered the true power of expression through theatre.",
     author: "Faculty",
     institution: "Sri Prakash Educational Institutions, A.P.",
-    image: "/placeholder.svg?height=80&width=80",
+    
   },
   {
     quote: "Kumar Sumitt's mime and acting sessions left a lasting impression on our students and teachers alike.",
     author: "Faculty",
     institution: "Academy of Theatre Arts, Mumbai",
-    image: "/placeholder.svg?height=80&width=80",
+    
   },
 ]
 
-const galleryItems = [
-  {
-    id: 1,
-    type: "workshop",
-    title: "Acting Workshop at IIT Patna",
-    image: "/placeholder.svg?height=400&width=600",
-    description: "Interactive acting workshop with engineering students",
-  },
-  {
-    id: 2,
-    type: "performance",
-    title: "Mime Performance at Wilson College",
-    image: "/placeholder.svg?height=400&width=600",
-    description: "Live mime performance demonstration",
-  },
-  {
-    id: 3,
-    type: "training",
-    title: "Faculty Training Session",
-    image: "/placeholder.svg?height=400&width=600",
-    description: "Professional development session for theatre educators",
-  },
-  {
-    id: 4,
-    type: "cultural",
-    title: "Cultural Exchange in Kazakhstan",
-    image: "/placeholder.svg?height=400&width=600",
-    description: "International cultural exchange program",
-  },
-  {
-    id: 5,
-    type: "workshop",
-    title: "Children's Theatre Workshop",
-    image: "/placeholder.svg?height=400&width=600",
-    description: "Creative workshop at Bihar Bal Bhawan",
-  },
-  {
-    id: 6,
-    type: "performance",
-    title: "Theatre Performance at SCOPA",
-    image: "/placeholder.svg?height=400&width=600",
-    description: "Professional theatre performance and demonstration",
-  },
-]
+
 
 export default function InstitutionAwardsPage() {
   const [selectedImage, setSelectedImage] = useState(null)
@@ -259,20 +216,32 @@ export default function InstitutionAwardsPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-[90vh] overflow-hidden">
-        <div className="absolute inset-0">
-          <Image src="/assets/banner.jpg" alt="Director at work" fill className="object-cover" />
-          <div className="absolute inset-0 bg-black/60" />
+      <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-gray-900 to-black overflow-hidden">
+        {/* Background Image Grid */}
+        <div className="absolute inset-0 grid grid-cols-3 gap-1 opacity-20">
+          <div className="relative h-full">
+            <Image src="/assets/institute/a.webp" alt="Production" fill className="object-cover" />
+          </div>
+          <div className="relative h-full">
+            <Image src="/assets/institute/b.webp" alt="Business" fill className="object-cover" />
+          </div>
+          <div className="relative h-full">
+            <Image src="/assets/institute/d.webp" alt="Success" fill className="object-cover" />
+          </div>
         </div>
 
-        <div className="relative z-10 h-full flex items-center">
-          <div className="max-w-7xl mx-auto px-4 w-full">
-            <div className="max-w-4xl">
-              <h1 className="text-6xl md:text-8xl font-bold text-white mb-6">Institutional Visits</h1>
-              <p className="text-2xl text-gray-200 mb-8">
-                Sharing knowledge and passion for performing arts across prestigious institutions
-              </p>
-            </div>
+        {/* Content Overlay */}
+        <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
+          <div className="space-y-4 sm:space-y-6 md:space-y-8">
+            <h1 className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-bold text-white mb-3 sm:mb-4 md:mb-6">
+              <span className="block mt-1 sm:mt-2 bg-gradient-to-r from-pink-500 via-green-500 to-blue-500 bg-clip-text text-transparent">
+                Institutional Visits
+              </span>
+            </h1>
+            <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-gray-300 max-w-full sm:max-w-2xl md:max-w-3xl mx-auto leading-relaxed text-justify px-2 sm:px-0">
+            Sharing knowledge and passion for performing arts across prestigious institutions
+            </p>
+       
           </div>
         </div>
       </section>
@@ -534,11 +503,7 @@ export default function InstitutionAwardsPage() {
                   "{testimonial.quote}"
                 </blockquote>
                 <div className="flex items-center space-x-4">
-                  <img
-                    src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.author}
-                    className="w-12 h-12 rounded-full object-cover border-2 border-pink-200"
-                  />
+                 
                   <div>
                     <cite className="font-bold text-gray-800 not-italic">{testimonial.author}</cite>
                     <div className="text-pink-600 text-sm font-medium">{testimonial.institution}</div>

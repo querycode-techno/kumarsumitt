@@ -93,7 +93,25 @@ export default function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-4">
-              {['Home', 'About', 'Gallery', 'Events', 'Portfolio', 'Contact'].map((link) => (
+              <li>
+                <Link 
+                  href="/" 
+                  className="text-gray-400 hover:text-white transition-colors flex items-center group"
+                >
+                  <Star className="h-3 w-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity text-yellow-500" />
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/about/personal" 
+                  className="text-gray-400 hover:text-white transition-colors flex items-center group"
+                >
+                  <Star className="h-3 w-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity text-yellow-500" />
+                  About
+                </Link>
+              </li>
+              {['Gallery', 'Events', 'Portfolio', 'Contact'].map((link) => (
                 <li key={link}>
                   <Link 
                     href={`/${link.toLowerCase()}`} 
@@ -120,12 +138,12 @@ export default function Footer() {
                   <p className="text-sm text-rose-500 mt-1">Est. 2017</p>
                 </a>
               </li>
-              {/* <li className="group">
+              <li className="group">
                 <a href="#" className="text-gray-400 hover:text-white transition-colors block">
-                  <span className="text-lg font-semibold">KSSA</span>
+                  <span className="text-lg font-semibold">Kumar Sumitt School of Acting Foundation</span>
                   <p className="text-sm text-rose-500 mt-1">Est. 2025</p>
                 </a>
-              </li> */}
+              </li>
               <li>
                 <Link href="/portfolio/research" className="text-gray-400 hover:text-white transition-colors">
                   Research Publications

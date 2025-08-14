@@ -14,25 +14,18 @@ const galleryCategories = [
     color: "from-green-500 to-green-600",
   },
   {
-    title: "Training Videos - National",
+    title: "Posters",
+    description: "Posters of the plays and shows",
+    icon: <Video className="h-8 w-8" />,
+    link: "/gallery/poster",
+    color: "from-pink-500 to-pink-600",
+  },
+  {
+    title: "Training Videos - National/International",
     description: "Workshops and training sessions across India",
     icon: <Video className="h-8 w-8" />,
     link: "/gallery/training/national",
     color: "from-pink-500 to-pink-600",
-  },
-  {
-    title: "Training Videos - International",
-    description: "Global workshops and international collaborations",
-    icon: <Video className="h-8 w-8" />,
-    link: "/gallery/training/international",
-    color: "from-green-500 to-pink-500",
-  },
-  {
-    title: "Electronic Media",
-    description: "TV interviews, documentaries, and media appearances",
-    icon: <Mic className="h-8 w-8" />,
-    link: "/gallery/media/electronic",
-    color: "from-pink-500 to-green-500",
   },
   {
     title: "Print Media",

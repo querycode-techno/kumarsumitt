@@ -74,22 +74,33 @@ export default function AwardsCertificatePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative py-32 px-4 bg-gradient-to-br from-gray-500  to-gray-900 text-white">
-        <div className="absolute inset-0 opacity-10">
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `url("/hero/b1.webp")`,
-              backgroundRepeat: "repeat",
-            }}
-            aria-hidden="true"
-          />
+      <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-gray-900 to-black overflow-hidden">
+        {/* Background Image Grid */}
+        <div className="absolute inset-0 grid grid-cols-3 gap-1 opacity-20">
+        <div className="relative h-full">
+            <Image src="/assets/certificates/IMG_0175_6_11zon.jpg" alt="Production" fill className="object-cover" />
+          </div>
+          <div className="relative h-full">
+            <Image src="/assets/certificates/IMG_1955_22_11zon.jpg" alt="Business" fill className="object-cover" />
+          </div>
+          <div className="relative h-full">
+            <Image src="/assets/certificates/IMG_E0179_12_11zon_6_11zon.jpg" alt="Success" fill className="object-cover" />
+          </div>
         </div>
-        <div className="relative z-10 max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Certificates & Awards</h1>
-          <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
-            Explore Kumar Sumitt collection of certificates, recognition letters, and achievement awards from various institutions and organizations.
-          </p>
+
+        {/* Content Overlay */}
+        <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
+          <div className="space-y-4 sm:space-y-6 md:space-y-8">
+            <h1 className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-bold text-white mb-3 sm:mb-4 md:mb-6">
+              <span className="block mt-1 sm:mt-2 bg-gradient-to-r from-pink-500 via-green-500 to-blue-500 bg-clip-text text-transparent">
+                Certificates
+              </span>
+            </h1>
+            <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-gray-300 max-w-full sm:max-w-2xl md:max-w-3xl mx-auto leading-relaxed text-justify px-2 sm:px-0">
+            Sharing knowledge and passion for performing arts across prestigious institutions.
+            </p>
+       
+          </div>
         </div>
       </section>
 

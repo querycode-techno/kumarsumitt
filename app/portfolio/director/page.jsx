@@ -4,6 +4,17 @@ import Image from "next/image"
 import { Film, Award, Users, PlayCircle, Globe, BookOpen, Theater } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import { stage } from "@/data/stage"
+import { useState } from "react"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogClose,
+} from "@/components/ui/dialog.jsx"
+import { ExternalLink, X } from "lucide-react"
 
 const notableDirections = [
   "Sita Ram",
@@ -50,17 +61,17 @@ const pastProjects = [
 
 const upcomingProjects = [
   {
-    title: "Untitled English Play",
+    title: "English Play",
     type: "International Project",
     year: "2025"
   },
   {
-    title: "Untitled Hindi Play",
+    title: "Hindi Play",
     type: "National Project",
     year: "2026"
   },
   {
-    title: "Untitled Play",
+    title: "Play",
     type: "National Project",
     year: "2026"
   }
@@ -78,6 +89,32 @@ const languages = [
 ]
 
 export default function DirectorPortfolioPage() {
+  const [searchTerm, setSearchTerm] = useState("")
+  const [filterLanguage, setFilterLanguage] = useState("")
+  const [filterYear, setFilterYear] = useState("")
+
+  const languages = [...new Set(stage.map(work => work.language))].sort()
+  const years = [...new Set(stage.map(work => work.year))].sort()
+
+  const filteredExperience = stage.filter(work => {
+    const matchesSearch = searchTerm === "" || 
+      work.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      work.playwright.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      work.character.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      work.organization.toLowerCase().includes(searchTerm.toLowerCase())
+    
+    const matchesLanguage = filterLanguage === "" || work.language === filterLanguage
+    const matchesYear = filterYear === "" || work.year === filterYear
+
+    return matchesSearch && matchesLanguage && matchesYear
+  })
+
+  const totalShows = stage.length
+  const uniqueLanguages = new Set(stage.map(work => work.language)).size
+  const uniqueOrganizations = new Set(stage.map(work => work.organization)).size
+  const directedShows = stage.filter(work => work.character === "Direction").length
+  const actedShows = stage.filter(work => work.character !== "Direction").length
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -85,7 +122,7 @@ export default function DirectorPortfolioPage() {
       {/* Hero Section */}
       <section className="relative h-[90vh] overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/assets/banner.jpg" alt="Director at work" fill className="object-cover" />
+          <Image src="/113.jpg" alt="Director at work" fill className="object-cover" />
           <div className="absolute inset-0 bg-black/60" />
         </div>
 
@@ -118,7 +155,122 @@ export default function DirectorPortfolioPage() {
       {/* International Productions Highlight */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-gray-800">International Productions</h2>
+          <div className="flex items-center justify-between mb-12">
+            <h2 className="text-4xl font-bold text-gray-800">International Productions</h2>
+            <Dialog className="mt-50">
+              <DialogTrigger asChild>
+                <button 
+                  type="button"
+                  className="inline-flex items-center px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg font-medium text-sm transition-colors"
+                >
+                  <ExternalLink className="h-4 w-4 mr-2" />
+                  View All Stage Performances
+                </button>
+              </DialogTrigger>
+              <DialogContent className="max-w-[85vw] w-full max-h-[85vh] p-6 overflow-hidden bg-white mt-11">
+                <DialogHeader className="mb-6 sticky top-0 bg-white z-50 pb-4 border-b">
+                  <DialogTitle className="text-2xl font-bold text-gray-900">Complete Stage Performance History</DialogTitle>
+                  <DialogClose className="absolute right-6 top-6 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+                    <X className="h-5 w-5" />
+                    <span className="sr-only">Close</span>
+                  </DialogClose>
+                </DialogHeader>
+                
+                <div className="overflow-y-auto max-h-[calc(85vh-10rem)]">
+                  {/* Statistics Summary */}
+                  <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6 p-4 bg-gray-50 rounded-xl">
+                    <div className="text-center p-3 bg-white rounded-lg shadow-sm">
+                      <div className="text-2xl font-bold text-green-600">{totalShows}</div>
+                      <div className="text-sm text-gray-600 mt-1">Total Shows</div>
+                    </div>
+                    
+                    <div className="text-center p-3 bg-white rounded-lg shadow-sm">
+                      <div className="text-2xl font-bold text-green-600">{uniqueOrganizations}</div>
+                      <div className="text-sm text-gray-600 mt-1">Organizations</div>
+                    </div>
+                    <div className="text-center p-3 bg-white rounded-lg shadow-sm">
+                      <div className="text-2xl font-bold text-green-600">{directedShows}</div>
+                      <div className="text-sm text-gray-600 mt-1">Shows Directed</div>
+                    </div>
+                    <div className="text-center p-3 bg-white rounded-lg shadow-sm">
+                      <div className="text-2xl font-bold text-green-600">{actedShows}</div>
+                      <div className="text-sm text-gray-600 mt-1">Shows Acted</div>
+                    </div>
+                  </div>
+
+                  {/* Filters */}
+                  <div className="flex flex-col md:flex-row gap-3 mb-6 p-4 bg-white border rounded-xl shadow-sm">
+                    <div className="flex-1">
+                      <label className="block text-xs font-medium text-gray-700 mb-1">Search</label>
+                      <input
+                        type="text"
+                        placeholder="Search shows, playwrights, characters..."
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        className="w-full px-4 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-50"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-xs font-medium text-gray-700 mb-1">Year</label>
+                      <select
+                        value={filterYear}
+                        onChange={(e) => setFilterYear(e.target.value)}
+                        className="w-full md:w-48 px-4 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-50"
+                      >
+                        <option value="">All Years</option>
+                        {years.map(year => (
+                          <option key={year} value={year}>{year}</option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
+
+                  {/* Table */}
+                  <div className="relative rounded-xl border shadow-sm">
+                    <div className="overflow-x-auto -mx-6 md:mx-0">
+                      <div className="inline-block min-w-full align-middle">
+                        <table className="min-w-full divide-y divide-gray-200">
+                          <thead className="bg-gray-50">
+                            <tr>
+                              <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">S.No.</th>
+                              <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">Name of Play/Show</th>
+                              <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">Language</th>
+                              <th scope="col" className="hidden md:table-cell px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">Playwright/Story</th>
+                              <th scope="col" className="hidden md:table-cell px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">Character</th>
+                              <th scope="col" className="hidden md:table-cell px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">Direction</th>
+                              <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">Year</th>
+                              <th scope="col" className="hidden md:table-cell px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider whitespace-nowrap">Organisation/Place</th>
+                            </tr>
+                          </thead>
+                          <tbody className="bg-white divide-y divide-gray-200">
+                            {filteredExperience.map((work, index) => (
+                              <tr key={work.id} className="hover:bg-gray-50 transition-colors">
+                                <td className="px-4 py-3 text-sm text-gray-500 whitespace-nowrap">{work.id}</td>
+                                <td className="px-4 py-3 text-sm font-medium text-gray-900">
+                                  <div className="flex flex-col">
+                                    <span className="whitespace-nowrap">{work.name}</span>
+                                    <span className="md:hidden text-xs text-gray-500 mt-1">{work.playwright}</span>
+                                    <span className="md:hidden text-xs text-gray-500">{work.character}</span>
+                                    <span className="md:hidden text-xs text-gray-500">{work.organization}</span>
+                                  </div>
+                                </td>
+                                <td className="px-4 py-3 text-sm text-gray-500 whitespace-nowrap">{work.language}</td>
+                                <td className="hidden md:table-cell px-4 py-3 text-sm text-gray-500 whitespace-nowrap">{work.playwright}</td>
+                                <td className="hidden md:table-cell px-4 py-3 text-sm text-gray-500 whitespace-nowrap">{work.character}</td>
+                                <td className="hidden md:table-cell px-4 py-3 text-sm text-gray-500 whitespace-nowrap">{work.direction}</td>
+                                <td className="px-4 py-3 text-sm text-gray-500 whitespace-nowrap">{work.year}</td>
+                                <td className="hidden md:table-cell px-4 py-3 text-sm text-gray-500 whitespace-nowrap">{work.organization}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
+          </div>
           
           <div className="space-y-8">
             <div className="bg-white rounded-2xl p-8 shadow-xl">

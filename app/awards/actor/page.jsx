@@ -184,17 +184,17 @@ export default function Awards() {
     <div className="min-h-screen bg-white">
       <Navbar />
      {/* Hero Section */}
-     <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-gray-900 to-black overflow-hidden">
+     <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-gray-900 to-black overflow-hidden">
         {/* Background Image Grid */}
         <div className="absolute inset-0 grid grid-cols-3 gap-1 opacity-20">
           <div className="relative h-full">
-            <Image src="/gallery/new/191.JPG" alt="Production" fill className="object-cover" />
+            <Image src="/gallery/new/183.JPG" alt="Production" fill className="object-cover" />
           </div>
           <div className="relative h-full">
-            <Image src="/gallery/162.JPG" alt="Business" fill className="object-cover" />
+            <Image src="/gallery/new/182.JPG" alt="Business" fill className="object-cover" />
           </div>
           <div className="relative h-full">
-            <Image src="/gallery/83.JPG" alt="Success" fill className="object-cover" />
+            <Image src="/gallery/new/a.jpg" alt="Success" fill className="object-cover" />
           </div>
         </div>
 
