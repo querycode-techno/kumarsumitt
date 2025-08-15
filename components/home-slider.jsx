@@ -153,10 +153,9 @@ export default function HomeSlider() {
             </div>
 
             {/* Content */}
-            <div className="absolute inset-0 flex items-end pb-6 sm:pb-8 md:pb-12 lg:pb-16 xl:pb-20 z-30">
+            {/* <div className="absolute inset-0 flex items-end pb-6 sm:pb-8 md:pb-12 lg:pb-16 xl:pb-20 z-30">
               <div className="w-full px-3 sm:px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
                 <div className="max-w-[260px] sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
-                  {/* Movie-style Rating */}
                   <div
                     className="flex flex-wrap items-center gap-1.5 sm:gap-2 md:gap-3 lg:gap-4 mb-2 sm:mb-3 md:mb-4 lg:mb-6 
                                 animate-fade-in-up text-[8px] sm:text-[10px] md:text-xs lg:text-sm"
@@ -179,8 +178,7 @@ export default function HomeSlider() {
                     <span className="text-gray-400 hidden sm:inline">|</span>
                     <span className="text-gray-300">{banner.year}</span>
                   </div>
-
-                  {/* Title & Description */}
+                  
                   <h1
                     className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-white 
                                mb-1 sm:mb-2 md:mb-3 leading-tight animate-fade-in-up delay-100"
@@ -201,31 +199,16 @@ export default function HomeSlider() {
                     {banner.description}
                   </p>
 
-                  {/* Action Buttons */}
+                 
                   <div
                     className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 md:gap-4 
                                 animate-fade-in-up delay-400"
                   >
-                    {/* <Link
-                      href={banner.link}
-                      className="w-full sm:w-auto group relative overflow-hidden px-3 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-2.5 md:py-3 lg:py-4 
-                               bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors duration-300 text-white"
-                    >
-                      <div
-                        className="absolute inset-0 bg-gradient-to-r from-pink-500 to-pink-600 
-                                    opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                      />
-                      <div className="relative flex items-center justify-center space-x-1.5 sm:space-x-2">
-                        <Play className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 lg:w-5 lg:h-5" />
-                        <span className="font-semibold text-xs sm:text-sm md:text-base lg:text-lg">
-                          {banner.buttonText}
-                        </span>
-                      </div>
-                    </Link> */}
+                 
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

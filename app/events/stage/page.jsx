@@ -190,7 +190,7 @@ const upcomingShows = [
   {
     show: "Stage Play (Hindi & Maithili)",
     dates: "2024 - 2025",
-    venue: "National Theaters",
+    venue: "National Theatres",
     city: "Multiple Cities",
     status: "Pre-Production",
   },

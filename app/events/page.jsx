@@ -1,15 +1,15 @@
 "use client"
 
 import Link from "next/link"
-import { Theater, Film, Mic2, Users, Heart, Star, GraduationCap } from "lucide-react"
+import { Theatre, Film, Mic2, Users, Heart, Star, GraduationCap } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
 const eventCategories = [
   {
     title: "Stage Shows",
-    description: "Theater performances and live stage productions",
-    icon: <Theater className="h-8 w-8" />,
+    description: "Theatre performances and live stage productions",
+    icon: <Theatre className="h-8 w-8" />,
     link: "/events/stage",
     color: "from-green-500 to-green-600",
     count: "25+",

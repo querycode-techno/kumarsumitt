@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Film, Award, Users, PlayCircle, Globe, BookOpen, Theater } from "lucide-react"
+import { Film, Award, Users, PlayCircle, Globe, BookOpen, Theatre } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { stage } from "@/data/stage"

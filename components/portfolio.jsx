@@ -25,11 +25,11 @@ const portfolioImages = [
     src: "/assets/cc.jpg",
     alt: "Portfolio Image 3"
   },
-  {
-    id: 4,
-    src: "/assets/d.jpg",
-    alt: "Portfolio Image 4"
-  },
+  // {
+  //   id: 4,
+  //   src: "/assets/d.jpg",
+  //   alt: "Portfolio Image 4"
+  // },
   
   {
     id: 5,

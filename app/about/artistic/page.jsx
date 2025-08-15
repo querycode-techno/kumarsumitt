@@ -18,7 +18,7 @@ export default function ArtisticDetailsPage() {
             <Image src="/assets/joker.jpg" alt="Stage Performance" fill className="object-cover" />
           </div>
           <div className="relative h-full">
-            <Image src="/assets/gg10.jpg" alt="Theater" fill className="object-cover" />
+            <Image src="/assets/gg10.jpg" alt="Theatre" fill className="object-cover" />
           </div>
           <div className="relative h-full hidden md:block">
             <Image src="/gallery/new/191.JPG" alt="Cinema" fill className="object-cover" />

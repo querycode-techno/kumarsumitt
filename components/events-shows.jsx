@@ -9,8 +9,6 @@ const events = [
     id: 0,
     title: "Supna Ka Sapna",
     year: "2021",
-    type: "Short Film",
-    platform: "Short Film",
     role: "Kumar Sumitt",
     iframe: "https://www.youtube.com/embed/wx-xLWNFM2U?si=J4LzTQ8cHdYNMskx",
   },
@@ -18,8 +16,6 @@ const events = [
     id: 1,
     title: "The blue umbrella",
     year: "2023",
-    type: "Short Film",
-    platform: "Short Film",
     role: "Kumar Sumitt",
     iframe: "https://www.youtube.com/embed/auO53iCgYK0?si=7TNtCOewIFwAXTF-",
     image: "/placeholder.svg",
@@ -28,8 +24,6 @@ const events = [
     id: 2,
     title: "GUSTO Part 2",
     year: "2023",
-    type: "Short Film",
-    platform: "Short Film",
     role: "Kumar Sumitt",
     iframe: "https://www.youtube.com/embed/WqupanpPDiM?si=3OdvLsfs3AYkp6ya",
     image: "/placeholder.svg",
@@ -92,15 +86,15 @@ export default function EventsShows() {
                     <Play className="h-10 w-10 text-white ml-1" />
                   </div>
                 </div>
-                <div className="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-md text-sm font-semibold z-20">
-                  {event.type}
-                </div>
+                {/* <div className="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-md text-sm font-semibold z-20">
+                  {event.role}
+                </div> */}
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-800">{event.title}</h3>
                 <div className="flex justify-between items-center text-sm">
                   <span className="text-gray-500">{event.year}</span>
-                  <span className="text-green-600 font-semibold">{event.type}</span>
+                  <span className="text-green-600 font-semibold">{event.role}</span>
                 </div>
               </div>
             </div>
@@ -138,9 +132,8 @@ export default function EventsShows() {
                 {/* Event Details */}
                 <div className="space-y-2 text-gray-600">
                   <p className="text-sm"><strong>Role:</strong> {selectedEvent.role}</p>
-                  <p className="text-sm"><strong>Platform:</strong> {selectedEvent.platform}</p>
                   <div className="flex gap-4 text-sm">
-                    <span className="text-green-600 font-semibold">{selectedEvent.type}</span>
+                    <span className="text-green-600 font-semibold">{selectedEvent.role}</span>
                     <span className="text-gray-500">{selectedEvent.year}</span>
                   </div>
                 </div>

@@ -129,7 +129,7 @@ export default function ExperiencePage() {
         {/* Background Image Grid */}
         <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-4 gap-1 opacity-20">
           <div className="relative h-full">
-            <Image src="/gallery/new/191.JPG" alt="Theater" fill className="object-cover" />
+            <Image src="/gallery/new/191.JPG" alt="Theatre" fill className="object-cover" />
           </div>
           <div className="relative h-full">
             <Image src="/gallery/162.JPG" alt="Cinema" fill className="object-cover" />
@@ -152,7 +152,7 @@ export default function ExperiencePage() {
               </span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed text-justify px-2">
-              From theater stages to silver screens, every role has been a stepping stone in this remarkable journey of storytelling and performance.
+              From Theatre stages to silver screens, every role has been a stepping stone in this remarkable journey of storytelling and performance.
             </p>
             
             {/* Quick Stats */}
