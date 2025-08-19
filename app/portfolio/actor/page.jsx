@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Play, Award, ArrowRight, BookOpen, Tv, Music, Theatre, Globe } from "lucide-react"
+import { Play, Award, ArrowRight, BookOpen, Tv, Music, Drama, Globe } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
@@ -164,20 +164,20 @@ export default function ActorPortfolioPage() {
       
        {/* Hero Section */}
        <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-black overflow-hidden pt-16 md:pt-0">
-      
-
-      {/* Background Image Grid */}
-      <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-3 gap-1 opacity-20">
-        <div className="relative h-full">
-          <Image src="/assets/joker.jpg" alt="Stage Performance" fill className="object-cover" />
+                <div className="relative w-full h-full">
+          {/* Background Image Grid */}
+          <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-3 gap-1 opacity-20">
+            <div className="relative h-full">
+              <Image src="/assets/joker.jpg" alt="Stage Performance" fill className="object-cover" />
+            </div>
+            <div className="relative h-full">
+              <Image src="/assets/gg10.jpg" alt="Theatre" fill className="object-cover" />
+            </div>
+            <div className="relative h-full hidden md:block">
+              <Image src="/gallery/new/191.JPG" alt="Cinema" fill className="object-cover" />
+            </div>
+          </div>
         </div>
-        <div className="relative h-full">
-          <Image src="/assets/gg10.jpg" alt="Theatre" fill className="object-cover" />
-        </div>
-        <div className="relative h-full hidden md:block">
-          <Image src="/gallery/new/191.JPG" alt="Cinema" fill className="object-cover" />
-        </div>
-      </div>
 
       {/* Content Overlay */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
@@ -218,7 +218,7 @@ export default function ActorPortfolioPage() {
               <h3 className="text-xl font-bold mb-4 text-gray-800">Professional Highlights</h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
-                  <Theatre className="h-5 w-5 text-green-500" />
+                  <Drama className="h-5 w-5 text-green-500" />
                   <span>70+ acclaimed stage productions</span>
                 </div>
                 <div className="flex items-center gap-3">
