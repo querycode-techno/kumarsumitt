@@ -35,29 +35,14 @@ export default function ArtisticDetailsPage() {
               </span>
             </h1>
             <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-green-500 to-pink-500 mx-auto rounded-full mb-6 md:mb-8" />
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-justify px-2">
+            <p className="text-base  sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-justify px-2">
               The creative vision and artistic approach that bridges ancient wisdom with contemporary storytelling techniques
             </p>
-            
-            {/* Quick Highlights */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 mt-8 md:mt-12 max-w-4xl mx-auto">
-              <div className="p-3 md:p-4 backdrop-blur-sm bg-white/10 rounded-lg">
-                <div className="text-xl md:text-3xl font-bold text-green-400 mb-1 md:mb-2">7+</div>
-                <div className="text-xs md:text-sm text-gray-300">Languages</div>
-              </div>
-              <div className="p-3 md:p-4 backdrop-blur-sm bg-white/10 rounded-lg">
-                <div className="text-xl md:text-3xl font-bold text-pink-400 mb-1 md:mb-2">2</div>
-                <div className="text-xs md:text-sm text-gray-300">Art Forms</div>
-              </div>
-              <div className="p-3 md:p-4 backdrop-blur-sm bg-white/10 rounded-lg col-span-2 md:col-span-1">
-                <div className="text-xl md:text-3xl font-bold text-green-400 mb-1 md:mb-2">PhD</div>
-                <div className="text-xs md:text-sm text-gray-300">Research Scholar</div>
-              </div>
-            </div>
+           
 
             {/* Scroll Indicator */}
-            <div 
-              className="absolute bottom-6 md:bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer hidden sm:block"
+            {/* <div 
+              className="absolute bottom-1 md:bottom-1 left-1/2 transform -translate-x-1/2 cursor-pointer hidden sm:block"
               onClick={() => {
                 const nextSection = document.querySelector('section:nth-of-type(2)');
                 nextSection?.scrollIntoView({ behavior: 'smooth' });
@@ -66,7 +51,7 @@ export default function ArtisticDetailsPage() {
               <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2 hover:border-white/80 transition-colors">
                 <div className="w-1 h-2 bg-white/50 rounded-full animate-scroll" />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

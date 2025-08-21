@@ -122,7 +122,7 @@ export default function DirectorPortfolioPage() {
       {/* Hero Section */}
       <section className="relative h-[90vh] overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/113.jpg" alt="Director at work" fill className="object-cover" />
+          <Image src="/113.JPG" alt="Director at work" fill className="object-cover" />
           <div className="absolute inset-0 bg-black/60" />
         </div>
 
@@ -164,7 +164,7 @@ export default function DirectorPortfolioPage() {
                   className="inline-flex items-center px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg font-medium text-sm transition-colors"
                 >
                   <ExternalLink className="h-4 w-4 mr-2" />
-                  View All Stage Performances
+                  View Directorial Works
                 </button>
               </DialogTrigger>
               <DialogContent className="max-w-[85vw] w-full max-h-[85vh] p-6 overflow-hidden bg-white mt-11">

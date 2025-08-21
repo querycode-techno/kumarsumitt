@@ -80,6 +80,9 @@ const notableStageProductions = [
   "Adbhut Saiyog",
   "Kathak Lok",
   "Lodhanath",
+  "Barka Saheb",
+  "Biniya",
+  "Beyond the Sound",
 ]
 
 const musicVideos = [
@@ -162,36 +165,34 @@ export default function ActorPortfolioPage() {
     <div className="min-h-screen bg-white">
       <Navbar />
       
-       {/* Hero Section */}
-       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-black overflow-hidden pt-16 md:pt-0">
-                <div className="relative w-full h-full">
-          {/* Background Image Grid */}
-          <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-3 gap-1 opacity-20">
-            <div className="relative h-full">
-              <Image src="/assets/joker.jpg" alt="Stage Performance" fill className="object-cover" />
-            </div>
-            <div className="relative h-full">
-              <Image src="/assets/gg10.jpg" alt="Theatre" fill className="object-cover" />
-            </div>
-            <div className="relative h-full hidden md:block">
-              <Image src="/gallery/new/191.JPG" alt="Cinema" fill className="object-cover" />
-            </div>
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-black overflow-hidden pt-16 md:pt-0">
+        {/* Background Image Grid */}
+        <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-3 gap-1 opacity-20">
+          <div className="relative h-full">
+            <Image src="/assets/joker.jpg" alt="Stage Performance" fill className="object-cover" />
+          </div>
+          <div className="relative h-full">
+            <Image src="/assets/gg10.jpg" alt="Theatre" fill className="object-cover" />
+          </div>
+          <div className="relative h-full hidden md:block">
+            <Image src="/gallery/new/191.JPG" alt="Cinema" fill className="object-cover" />
           </div>
         </div>
 
-      {/* Content Overlay */}
-      <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
-        <div className="space-y-6 md:space-y-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
-            Actor
-          </h1>
-          <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-green-500 to-pink-500 mx-auto rounded-full mb-6 md:mb-8" />
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-justify px-2">
-            A dedicated actor, director, and theatre educator with over two decades of experience in Hindi, Maithili, and Bhojpuri theatre
-          </p>
+        {/* Content Overlay */}
+        <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
+          <div className="space-y-6 md:space-y-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
+              Actor
+            </h1>
+            <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-green-500 to-pink-500 mx-auto rounded-full mb-6 md:mb-8" />
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-center px-2">
+              A dedicated actor, director, and theatre educator with over two decades of experience in Hindi, Maithili, and Bhojpuri theatre
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/* Biography Section */}
       <section className="py-12 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-gray-50 to-white">

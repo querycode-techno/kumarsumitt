@@ -11,29 +11,30 @@ const awards = [
   },
   {
     id: 2,
-    image: "/gallery/new/182.JPG",
+    image: "/gallery/new/saathi.jpg",
     // year: "2023",
   },
   {
     id: 3,
-    image: "/gallery/new/183.JPG",
+    image: "/gallery/new/182.JPG",
     // year: "2023",
   },
   {
     id: 4,
+    image: "/gallery/new/183.JPG",
+    // year: "2023",
+  },
+  {
+    id: 5,
     image: "/gallery/new/a.jpg",
     // year: "2024",
   },
   {
-    id: 5,
+    id: 6,
     image: "/gallery/new/b.jpg",
     // year: "2023",
   },
-  {
-    id: 6,
-    image: "/gallery/new/c.jpg",
-    // year: "2023",
-  },
+ 
 ]
 
 export default function AwardsAchievements() {

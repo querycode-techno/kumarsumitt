@@ -50,7 +50,7 @@ export default function ProfessionalWork() {
         <div className="text-center mb-8 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-pink-500">Professional Work</h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
-            Showcasing a diverse range of work spanning films, television, and Theatre
+            Showcasing a diverse range of work spanning  Theatre, Films and Television
           </p>
         </div>
 

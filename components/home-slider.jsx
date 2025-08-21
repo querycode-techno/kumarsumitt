@@ -10,56 +10,56 @@ import Link from "next/link";
 const banners = [
   {
     id: 1,
-    title: "Performance Showcase",
-    subtitle: "Watch Kumar Sumitt in action",
-    description:
-      "Experience the art of storytelling through powerful performances",
-    buttonText: "Watch Showreel",
+    title: "Watch Kumar Sumitt in action",
+    // subtitle: "Watch Kumar Sumitt in action",
+    // description:
+    //   "Experience the art of storytelling through powerful performances",
+    // buttonText: "Watch Showreel",
     type: "image",
     media: "/hero/b0.webp",
     link: "/portfolio/",
     // rating: "4.9",
-    genre: "Drama | Action",
+    // genre: "Drama | Action",
     // year: "2024",
   },
   {
     id: 2,
     title: "Master the Art of Acting",
-    subtitle: "Professional training for aspiring actors",
-    description: "Learn from industry experts and transform your acting career",
-    buttonText: "Join Training",
+    // subtitle: "Professional training for aspiring actors",
+    // description: "Learn from industry experts and transform your acting career",
+    // buttonText: "Join Training",
     type: "image",
     media: "/hero/b1.webp",
     link: "/events/training",
     // rating: "5.0",
-    genre: "Education | Workshop",
+    // genre: "Education | Workshop",
     // year: "2024",
   },
   {
     id: 3,
-    title: "Award Winning Director",
-    subtitle: "Recognized excellence in filmmaking",
-    description:
-      "Creating cinematic masterpieces that leave a lasting impression",
-    buttonText: "View Awards",
+    title: "Celebrating Life Through Art with Kumar Sumitt",
+    // subtitle: "Recognized excellence in filmmaking",
+    // description:
+    //   "Creating cinematic masterpieces that leave a lasting impression",
+    // buttonText: "View Awards",
     type: "image",
     media: "/hero/b2.webp",
     link: "/awards",
     // rating: "4.8",
-    genre: "Direction | Cinema",
+    // genre: "Direction | Cinema",
     // year: "2024",
   },
   {
     id: 4,
-    title: "Festival Participation",
-    subtitle: "Showcasing talent across the globe",
-    description: "Taking Indian cinema to international platforms",
-    buttonText: "Explore Events",
+    title: "Stage & Cinema performance",
+    // subtitle: "Showcasing talent across the globe",
+    // description: "Taking Indian cinema to international platforms",
+    // buttonText: "Explore Events",
     type: "image",
     media: "/hero/b3.webp",
     link: "/events/festivals",
     // rating: "4.9",
-    genre: "Festival | Global",
+    // genre: "Festival | Global",
     // year: "2024",
   },
 ];
@@ -153,10 +153,10 @@ export default function HomeSlider() {
             </div>
 
             {/* Content */}
-            {/* <div className="absolute inset-0 flex items-end pb-6 sm:pb-8 md:pb-12 lg:pb-16 xl:pb-20 z-30">
+            <div className="absolute inset-0 flex items-end pb-6 sm:pb-8 md:pb-12 lg:pb-16 xl:pb-20 z-30">
               <div className="w-full px-3 sm:px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
                 <div className="max-w-[260px] sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
-                  <div
+                  {/* <div
                     className="flex flex-wrap items-center gap-1.5 sm:gap-2 md:gap-3 lg:gap-4 mb-2 sm:mb-3 md:mb-4 lg:mb-6 
                                 animate-fade-in-up text-[8px] sm:text-[10px] md:text-xs lg:text-sm"
                   >
@@ -177,7 +177,7 @@ export default function HomeSlider() {
                     </span>
                     <span className="text-gray-400 hidden sm:inline">|</span>
                     <span className="text-gray-300">{banner.year}</span>
-                  </div>
+                  </div> */}
                   
                   <h1
                     className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-white 
@@ -208,7 +208,7 @@ export default function HomeSlider() {
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         ))}
       </div>

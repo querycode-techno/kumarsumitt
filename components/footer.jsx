@@ -102,16 +102,8 @@ export default function Footer() {
                   Home
                 </Link>
               </li>
-              <li>
-                <Link 
-                  href="/about/personal" 
-                  className="text-gray-400 hover:text-white transition-colors flex items-center group"
-                >
-                  <Star className="h-3 w-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity text-yellow-500" />
-                  About
-                </Link>
-              </li>
-              {['Gallery', 'Events', 'Portfolio', 'Contact'].map((link) => (
+              
+              {['About', 'Gallery', 'Events', 'Portfolio', 'Contact'].map((link) => (
                 <li key={link}>
                   <Link 
                     href={`/${link.toLowerCase()}`} 
@@ -208,10 +200,10 @@ export default function Footer() {
               © {new Date().getFullYear()} Kumar Sumitt. All rights reserved.
             </p>
             <div className="flex space-x-8 text-sm">
-              {['Privacy Policy', 'Terms of Service', 'Sitemap'].map((link) => (
+              {['Privacy Policy', 'Terms of Service'].map((link) => (
                 <Link 
                   key={link}
-                  href={`/${link.toLowerCase().replace(/ /g, '-')}`} 
+                  href={`/${link.toLowerCase().replace(/ /g, '-')}`} target="_blank" 
                   className="text-gray-500 hover:text-white transition-colors"
                 >
                   {link}

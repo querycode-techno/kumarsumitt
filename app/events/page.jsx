@@ -12,7 +12,7 @@ const eventCategories = [
     icon: <Drama className="h-8 w-8" />,
     link: "/events/stage",
     color: "from-green-500 to-green-600",
-    count: "25+",
+    count: "100+",
   },
   {
     title: "On Screen",
@@ -20,7 +20,7 @@ const eventCategories = [
     icon: <Film className="h-8 w-8" />,
     link: "/events/screen",
     color: "from-pink-500 to-pink-600",
-    count: "40+",
+    count: "50+",
   },
   {
     title: "Open Air Performances",
@@ -28,7 +28,7 @@ const eventCategories = [
     icon: <Mic2 className="h-8 w-8" />,
     link: "/events/open-air",
     color: "from-green-500 to-pink-500",
-    count: "15+",
+    count: "1500+",
   },
   {
     title: "Public Interaction",
@@ -36,7 +36,7 @@ const eventCategories = [
     icon: <Users className="h-8 w-8" />,
     link: "/events/interaction",
     color: "from-pink-500 to-green-500",
-    count: "30+",
+    count: "100+",
   },
   {
     title: "Spiritual Visits",
@@ -44,7 +44,7 @@ const eventCategories = [
     icon: <Heart className="h-8 w-8" />,
     link: "/events/spiritual",
     color: "from-green-600 to-pink-600",
-    count: "20+",
+    count: "50+",
   },
   {
     title: "Festival Participation",
@@ -52,7 +52,7 @@ const eventCategories = [
     icon: <Star className="h-8 w-8" />,
     link: "/events/festivals",
     color: "from-pink-600 to-green-600",
-    count: "35+",
+    count: "50+",
   },
   {
     title: "Training Sessions",
@@ -60,7 +60,7 @@ const eventCategories = [
     icon: <GraduationCap className="h-8 w-8" />,
     link: "/events/training",
     color: "from-green-500 to-pink-500",
-    count: "50+",
+    count: "500+",
   },
 ]
 

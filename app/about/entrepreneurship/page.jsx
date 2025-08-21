@@ -52,7 +52,7 @@ export default function EntrepreneurshipPage() {
           <div className="space-y-4 sm:space-y-6 md:space-y-8">
             <h1 className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-bold text-white mb-3 sm:mb-4 md:mb-6">
               <span className="block mt-1 sm:mt-2 bg-gradient-to-r from-pink-500 via-green-500 to-blue-500 bg-clip-text text-transparent">
-                Entertainment Ventures
+                Entertainment Venture
               </span>
             </h1>
             <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-gray-300 max-w-full sm:max-w-2xl md:max-w-3xl mx-auto leading-relaxed text-justify px-2 sm:px-0">
@@ -96,7 +96,7 @@ export default function EntrepreneurshipPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-pink-600 to-green-600 bg-clip-text text-transparent">
-              Our Ventures
+              Our Venture
             </h2>
             <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto text-justify">
               Building sustainable entertainment businesses that create value for artists, audiences, and the industry
@@ -149,9 +149,11 @@ export default function EntrepreneurshipPage() {
                   </div>
 
                   {venture.website !== "#" && (
-                    <Link href={venture.website} target="_blank" rel="noopener noreferrer">
+                    <Link href={venture.website} target="_blank" rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors flex items-center group"
+                    >
                       <button className="bg-gradient-to-r from-green-500 to-pink-500 hover:from-green-600 hover:to-pink-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold transition-colors inline-flex items-center text-sm md:text-base">
-                        Visit Website
+                        Visit
                         <ExternalLink className="ml-2 h-3 w-3 md:h-4 md:w-4" />
                       </button>
                     </Link>
