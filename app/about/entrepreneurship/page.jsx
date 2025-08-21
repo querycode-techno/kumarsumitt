@@ -200,7 +200,7 @@ export default function EntrepreneurshipPage() {
               Coming Soon
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Exciting new ventures on the horizon that will revolutionize theatre education and cultural exchange
+              Exciting new venture on the horizon that will revolutionize theatre education and cultural exchange
             </p>
           </div>
 
