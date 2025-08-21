@@ -42,9 +42,9 @@ export default function GalleryPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-green-50 to-pink-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+      <section className="flex items-center justify-center min-h-[40vh] py-28 px-4 bg-gradient-to-br from-green-50 to-pink-50">
+        <div className="w-full max-w-6xl">
+          <div className="text-center mb-16 flex flex-col items-center justify-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-green-600 to-pink-600 bg-clip-text text-transparent">
               Gallery
             </h1>
