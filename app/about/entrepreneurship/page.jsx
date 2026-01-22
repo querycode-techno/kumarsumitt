@@ -33,7 +33,7 @@ export default function EntrepreneurshipPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-gray-900 to-black overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-gray-900 to-black overflow-hidden">
         {/* Background Image Grid */}
         <div className="absolute inset-0 grid grid-cols-3 gap-1 opacity-20">
           <div className="relative h-full">
@@ -200,7 +200,7 @@ export default function EntrepreneurshipPage() {
               Coming Soon
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Exciting new venture on the horizon that will revolutionize theatre education and cultural exchange
+              Exciting new venture on the horizon that will revolutionize theatre, cinema education and cultural exchange
             </p>
           </div>
 

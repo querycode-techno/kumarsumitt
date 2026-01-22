@@ -17,6 +17,7 @@ const majorAwards = [
     ceremony: "Rashtriya Rang Lok",
     date: "2025",
     icon: <Users className="h-8 w-8 text-white" />,
+    awardFile: "/assets/awards/1.jpeg", // Add image or PDF path here, e.g., "/assets/certificates/award1.jpg" or "/assets/certificates/award1.pdf"
   },
   {
     id: 2,
@@ -28,6 +29,7 @@ const majorAwards = [
     ceremony: "Sarla Shriwas Samajik Sanskritik Shodh Sansthan",
     date: "2024",
     icon: <BookOpen className="h-8 w-8 text-white" />,
+    awardFile: "/assets/awards/4.jpeg", // Add image or PDF path here
   },
   {
     id: 3,
@@ -39,6 +41,7 @@ const majorAwards = [
     ceremony: "ICCR, Pune - Ministry of External Affairs, Govt. of India",
     date: "2024",
     icon: <Globe className="h-8 w-8 text-white" />,
+    awardFile: "/assets/awards/3.jpeg", // Add image or PDF path here
   },
   {
     id: 4,
@@ -50,6 +53,7 @@ const majorAwards = [
     ceremony: "Swami Vivekanand Cultural Centre, Embassy of India, Astana",
     date: "2024",
     icon: <Star className="h-8 w-8 text-white" />,
+    awardFile: "/assets/awards/2.jpeg", // Add image or PDF path here
   },
 ]
 
@@ -140,7 +144,7 @@ const timelineData = [
 ]
 
 export default function Awards() {
-  const [selectedImage, setSelectedImage] = useState(null)
+  const [selectedAward, setSelectedAward] = useState(null)
   const [currentCarouselIndex, setCurrentCarouselIndex] = useState(0)
 
   const carouselItems = [
@@ -255,15 +259,15 @@ export default function Awards() {
                           </div>
                         </div>
                       </div>
-                      <button
-                        onClick={() =>
-                          setSelectedImage(`/placeholder.svg?height=600&width=800&text=Award+Certificate+${award.id}`)
-                        }
-                        className="flex items-center space-x-2 bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
-                      >
-                        <Eye className="h-4 w-4" />
-                        <span>View Award</span>
-                      </button>
+                      {award.awardFile && (
+                        <button
+                          onClick={() => setSelectedAward(award)}
+                          className="flex items-center space-x-2 bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
+                        >
+                          <Eye className="h-4 w-4" />
+                          <span>View Award</span>
+                        </button>
+                      )}
                     </div>
                     <p className="text-gray-700 leading-relaxed mb-4">{award.description}</p>
                     <div className="bg-white rounded-lg p-4 border-l-4 border-pink-500">
@@ -474,24 +478,49 @@ export default function Awards() {
         </div>
       </section> */}
 
-      {/* Image Modal */}
-      {selectedImage && (
+      {/* Award Modal - Supports both Images and PDFs */}
+      {selectedAward && selectedAward.awardFile && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-8"
-          onClick={() => setSelectedImage(null)}
+          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4 md:p-8 overflow-auto"
+          onClick={() => setSelectedAward(null)}
         >
-          <div className="relative w-96 h-96 max-w-[90vw] max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
+          <div className="relative w-full max-w-[90vw] max-h-[85vh] flex flex-col items-center justify-center my-auto" onClick={(e) => e.stopPropagation()}>
             <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors duration-200 z-10"
+              onClick={() => setSelectedAward(null)}
+              className="absolute top-2 right-2 md:top-4 md:right-4 bg-black/80 text-white p-2 md:p-3 rounded-full hover:bg-black transition-colors duration-200 z-20 shadow-xl"
             >
-              <X className="h-8 w-8" />
+              <X className="h-5 w-5 md:h-6 md:w-6" />
             </button>
-            <img
-              src={selectedImage || "/placeholder.svg"}
-              alt="Award Certificate"
-              className="w-full h-full object-contain rounded-lg shadow-2xl bg-white"
-            />
+            
+            {/* Check if file is PDF or Image */}
+            <div className="w-full flex items-center justify-center mb-20">
+              {selectedAward.awardFile.toLowerCase().endsWith('.pdf') ? (
+                <div className="w-full h-[70vh] flex items-center justify-center">
+                  <iframe
+                    src={selectedAward.awardFile}
+                    className="w-full h-full max-w-[85vw] rounded-lg shadow-2xl bg-white"
+                    title={selectedAward.title}
+                  />
+                </div>
+              ) : (
+                <div className="relative w-full flex items-center justify-center">
+                  <Image
+                    src={selectedAward.awardFile}
+                    alt={selectedAward.title}
+                    width={1200}
+                    height={1600}
+                    className="max-w-[85vw] max-h-[70vh] w-auto h-auto object-contain rounded-lg shadow-2xl bg-white"
+                    priority
+                  />
+                </div>
+              )}
+            </div>
+            
+            {/* Award Info */}
+            <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black/70 text-white px-4 py-2 rounded-lg text-center max-w-[90%] z-10">
+              <p className="font-semibold text-sm md:text-base">{selectedAward.title}</p>
+              <p className="text-xs md:text-sm text-gray-300">{selectedAward.ceremony}</p>
+            </div>
           </div>
         </div>
       )}

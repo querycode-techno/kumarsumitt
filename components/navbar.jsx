@@ -436,6 +436,7 @@ export default function Navbar() {
                       {/* <Link href="/awards/director" className="block py-2 px-3 text-gray-600 hover:text-green-600 hover:bg-white rounded-lg transition-colors" onClick={closeMobileMenu}>As a Director</Link>
                       <Link href="/awards/trainer" className="block py-2 px-3 text-gray-600 hover:text-green-600 hover:bg-white rounded-lg transition-colors" onClick={closeMobileMenu}>As a Trainer</Link> */}
                       <Link href="/awards/institution" className="block py-2 px-3 text-gray-600 hover:text-green-600 hover:bg-white rounded-lg transition-colors" onClick={closeMobileMenu}>Institution Visits</Link>
+                      <Link href="/awards/certificate" className="block py-2 px-3 text-gray-600 hover:text-green-600 hover:bg-white rounded-lg transition-colors" onClick={closeMobileMenu}>Certificate</Link>
                     </div>
                   )}
                 </div>

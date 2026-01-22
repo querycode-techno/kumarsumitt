@@ -74,32 +74,75 @@ export default function AwardsCertificatePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-gray-900 to-black overflow-hidden">
-        {/* Background Image Grid */}
-        <div className="absolute inset-0 grid grid-cols-3 gap-1 opacity-20">
-        <div className="relative h-full">
-            <Image src="/assets/certificates/IMG_0175_6_11zon.jpg" alt="Production" fill className="object-cover" />
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-gray-900 to-black">
+        {/* Elegant Background Pattern */}
+        <div className="absolute inset-0">
+          {/* Main Background Image with Overlay */}
+          <div className="absolute inset-0">
+            <Image 
+              src="/assets/certificates/IMG_0175_6_11zon.jpg" 
+              alt="Certificate Background" 
+              fill 
+              className="object-cover opacity-15"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
           </div>
-          <div className="relative h-full">
-            <Image src="/assets/certificates/IMG_1955_22_11zon.jpg" alt="Business" fill className="object-cover" />
+          
+          {/* Decorative Grid Pattern */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute inset-0" style={{
+              backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                                linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+              backgroundSize: '50px 50px'
+            }}></div>
           </div>
-          <div className="relative h-full">
-            <Image src="/assets/certificates/IMG_E0179_12_11zon_6_11zon.jpg" alt="Success" fill className="object-cover" />
+          
+          {/* Accent Lines */}
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent opacity-50"></div>
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-pink-400 to-transparent opacity-50"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="text-center space-y-6 md:space-y-8">
+            {/* Badge/Icon */}
+            <div className="flex justify-center mb-4">
+              <div className="relative">
+                <div className="absolute inset-0 bg-green-500/20 blur-2xl rounded-full"></div>
+                <div className="relative bg-gradient-to-br from-green-500/20 to-pink-500/20 backdrop-blur-sm border border-white/10 rounded-full p-4 md:p-6">
+                  <Calendar className="h-8 w-8 md:h-12 md:w-12 text-green-400" />
+                </div>
+              </div>
+            </div>
+
+            {/* Main Heading */}
+            <div className="space-y-3 md:space-y-4">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight">
+                {/* <span className="block text-white mb-2">Professional</span> */}
+                <span className="block bg-gradient-to-r from-green-400 via-emerald-300 to-pink-400 bg-clip-text text-transparent">
+                  Certificates
+                </span>
+              </h1>
+              
+              {/* Decorative Line */}
+              <div className="flex items-center justify-center gap-4 my-6">
+                <div className="h-px w-16 bg-gradient-to-r from-transparent to-green-400"></div>
+                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                <div className="h-px w-32 bg-gradient-to-r from-green-400 via-pink-400 to-green-400"></div>
+                <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                <div className="h-px w-16 bg-gradient-to-l from-transparent to-pink-400"></div>
+              </div>
+            </div>
+
+           
           </div>
         </div>
 
-        {/* Content Overlay */}
-        <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
-          <div className="space-y-4 sm:space-y-6 md:space-y-8">
-            <h1 className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-bold text-white mb-3 sm:mb-4 md:mb-6">
-              <span className="block mt-1 sm:mt-2 bg-gradient-to-r from-pink-500 via-green-500 to-blue-500 bg-clip-text text-transparent">
-                Certificates
-              </span>
-            </h1>
-            <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-gray-300 max-w-full sm:max-w-2xl md:max-w-3xl mx-auto leading-relaxed text-justify px-2 sm:px-0">
-            Sharing knowledge and passion for performing arts across prestigious institutions.
-            </p>
-       
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white/50 rounded-full mt-2"></div>
           </div>
         </div>
       </section>

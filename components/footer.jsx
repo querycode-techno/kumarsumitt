@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Facebook, Instagram, Twitter,  Mail, Phone, MapPin, Star, Film, Award, Linkedin } from "lucide-react"
+import { Facebook, Instagram, Twitter,  Mail, Phone, MapPin, Star, Film, Award, Linkedin, Youtube } from "lucide-react"
 import { BsTwitterX } from "react-icons/bs";
 import Image from "next/image"
 
@@ -75,11 +75,9 @@ export default function Footer() {
               <Link href="https://x.com/kumarsumitt09?s=21" className="text-gray-400 hover:text-white hover:scale-110 transform transition-all duration-300">
                 <BsTwitterX className="h-6 w-6 filter drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]" />
               </Link>
-              
-
-              {/* <Link href="#" className="text-gray-400 hover:text-white hover:scale-110 transform transition-all duration-300">
+              <Link href="https://youtube.com/@sumitthakurst51?si=WTKTo9yAtp5Ci0hp" className="text-gray-400 hover:text-white hover:scale-110 transform transition-all duration-300">
                 <Youtube className="h-6 w-6 filter drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]" />
-              </Link> */}
+              </Link>
               <Link href="https://www.linkedin.com/in/kumar-sumitt-4b527b6a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="text-gray-400 hover:text-white hover:scale-110 transform transition-all duration-300">
                 <Linkedin className="h-6 w-6 filter drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]" />
               </Link>

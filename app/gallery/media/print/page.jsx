@@ -91,7 +91,7 @@ export default function PrintMediaPage() {
             </h1>
             <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-green-500 to-pink-500 mx-auto rounded-full mb-6 md:mb-8" />
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-justify px-2">
-              Print media from our performances and events
+              Print media from Kumar Sumitt's performances and events.
             </p>
           </div>
         </div>

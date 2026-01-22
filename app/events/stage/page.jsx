@@ -1,9 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Play, Calendar, MapPin, Clock, User, ExternalLink, Star, Trophy, Globe, X } from "lucide-react"
+import { ArrowLeft, ExternalLink, Star, Trophy, Globe, X } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import {
@@ -246,26 +245,29 @@ export default function StageShowsPage() {
 
   // Calculate statistics
   const totalShows = workExperience.length
-  const uniqueLanguages = new Set(workExperience.map(work => work.language)).size
+  // const uniqueLanguages = new Set(workExperience.map(work => work.language)).size
   const uniqueOrganizations = new Set(workExperience.map(work => work.organization)).size
-  const directedShows = workExperience.filter(work => work.character === "Direction").length
-  const actedShows = workExperience.filter(work => work.character !== "Direction").length
+  // const directedShows = workExperience.filter(work => work.character === "Direction").length
+  // const actedShows = workExperience.filter(work => work.character !== "Direction").length
 
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative py-32 px-4 bg-gradient-to-br from-black via-gray-900 to-gray-600 text-white">
-        <div className="absolute inset-0 opacity-10">
+      <section className="relative  min-h-[50vh] md:min-h-[70vh] py-32 px-4 text-white">
+        <div className="absolute inset-0 opacity-50 ">
           <div
-            className="absolute inset-0"
+            className="absolute inset-0 w-full h-full"
             style={{
-              backgroundImage: `url("/hero/b1.webp")`,
+              backgroundImage: `url("/gallery/new/bannerks.webp")`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
             }}
             aria-hidden="true"
           />
+          <div className="absolute inset-0 bg-black opacity-60" aria-hidden="true" />
         </div>
         <div className="relative z-10 max-w-6xl mx-auto">
           <div className="flex items-center mb-8">
@@ -274,8 +276,8 @@ export default function StageShowsPage() {
               Back to Events
             </Link>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Stage Shows</h1>
-          <p className="text-xl text-gray-200 mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-2xl">Stage Shows</h1>
+          <p className="text-xl text-white mb-4 drop-shadow-lg">
             Experience the power of performance through Kumar Sumitt's diverse repertoire of plays across genres.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -345,14 +347,7 @@ export default function StageShowsPage() {
                       <div className="text-2xl font-bold text-green-600">{uniqueOrganizations}</div>
                       <div className="text-sm text-gray-600 mt-1">Organizations</div>
                     </div>
-                    <div className="text-center p-3 bg-white rounded-lg shadow-sm">
-                      <div className="text-2xl font-bold text-green-600">{directedShows}</div>
-                      <div className="text-sm text-gray-600 mt-1">Shows Directed</div>
-                    </div>
-                    <div className="text-center p-3 bg-white rounded-lg shadow-sm">
-                      <div className="text-2xl font-bold text-green-600">{actedShows}</div>
-                      <div className="text-sm text-gray-600 mt-1">Shows Acted</div>
-                    </div>
+                   
                   </div>
 
                   {/* Filters */}

@@ -121,36 +121,36 @@ const testimonials = [
 const upcomingInteractions = [
   {
     title: "Meet & Greet with Kumar Sumitt",
-    date: "July 20, 2024",
-    venue: "Nehru Centre Auditorium",
+    // date: "July 20, 2024",
+    // venue: "Nehru Centre Auditorium",
     location: "Mumbai",
     type: "Fan Meet",
     status: "Registration Open",
   },
-  {
-    title: "Acting Masterclass for Fans",
-    date: "August 10, 2024",
-    venue: "Kanak Studio",
-    location: "Patna",
-    type: "Workshop",
-    status: "Limited Seats",
-  },
-  {
-    title: "College Campus Tour",
-    date: "September 15, 2024",
-    venue: "Various Colleges",
-    location: "Patna",
-    type: "Educational",
-    status: "Planning",
-  },
-  {
-    title: "Virtual Q&A Session",
-    date: "October 5, 2024",
-    venue: "Online Platform",
-    location: "Virtual",
-    type: "Digital",
-    status: "Coming Soon",
-  },
+  // {
+  //   title: "Acting Masterclass for Fans",
+  //   date: "August 10, 2024",
+  //   venue: "Kanak Studio",
+  //   location: "Patna",
+  //   type: "Workshop",
+  //   status: "Limited Seats",
+  // },
+  // {
+  //   title: "College Campus Tour",
+  //   date: "September 15, 2024",
+  //   venue: "Various Colleges",
+  //   location: "Patna",
+  //   type: "Educational",
+  //   status: "Planning",
+  // },
+  // {
+  //   title: "Virtual Q&A Session",
+  //   date: "October 5, 2024",
+  //   venue: "Online Platform",
+  //   location: "Virtual",
+  //   type: "Digital",
+  //   status: "Coming Soon",
+  // },
 ]
 
 export default function InteractionPage() {
@@ -159,7 +159,7 @@ export default function InteractionPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-screen py-32 px-4 bg-gradient-to-br from-gray-500 via-gray-900 to-gray-600 text-white">
+      <section className="relative h-[60vh] md:h-screen px-4 bg-gradient-to-br from-gray-500 via-gray-900 to-gray-600 text-white">
         {/* Full Background Image */}
         <div 
           className="absolute inset-0 w-full h-full"
@@ -174,15 +174,15 @@ export default function InteractionPage() {
         {/* Dark Overlay for Text Readability */}
         <div className="absolute inset-0 bg-black/50" />
         
-        <div className="relative z-10 max-w-6xl mx-auto">
-          <div className="flex items-center mb-8">
-            <Link href="/events" className="flex items-center text-white hover:text-gray-200 mr-4">
+        <div className="relative z-10 h-full flex flex-col justify-center items-center max-w-6xl mx-auto text-center">
+          <div className="absolute top-4 md:top-8 left-4">
+            <Link href="/events" className="flex items-center text-white hover:text-gray-200">
               <ArrowLeft className="h-5 w-5 mr-2" />
               Back to Events
             </Link>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Open Air Performances</h1>
-          <p className="text-xl text-gray-200">Outdoor theatre and public space performances</p>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4">Public Interactions</h1>
+          <p className="text-lg md:text-xl text-gray-200">Public interactions with Kumar Sumitt</p>
         </div>
       </section>
 
@@ -340,8 +340,8 @@ export default function InteractionPage() {
                 <thead className="bg-green-500 text-white">
                   <tr>
                     <th className="px-6 py-4 text-left font-semibold">Event</th>
-                    <th className="px-6 py-4 text-left font-semibold">Date</th>
-                    <th className="px-6 py-4 text-left font-semibold">Venue</th>
+                    {/* <th className="px-6 py-4 text-left font-semibold">Date</th>
+                    <th className="px-6 py-4 text-left font-semibold">Venue</th> */}
                     <th className="px-6 py-4 text-left font-semibold">Type</th>
                     <th className="px-6 py-4 text-left font-semibold">Status</th>
                   </tr>
@@ -350,16 +350,16 @@ export default function InteractionPage() {
                   {upcomingInteractions.map((interaction, index) => (
                     <tr key={index} className="border-b border-gray-200 hover:bg-gray-50">
                       <td className="px-6 py-4 font-medium text-gray-800">{interaction.title}</td>
-                      <td className="px-6 py-4 text-gray-600">{interaction.date}</td>
-                      <td className="px-6 py-4 text-gray-600">
+                      {/* <td className="px-6 py-4 text-gray-600">{interaction.date}</td> */}
+                      {/* <td className="px-6 py-4 text-gray-600">
                         {interaction.venue}, {interaction.location}
-                      </td>
+                      </td> */}
                       <td className="px-6 py-4 text-gray-600">{interaction.type}</td>
                       <td className="px-6 py-4">
                         {interaction.status === "Registration Open" || interaction.status === "Limited Seats" ? (
-                          <button className="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-md text-sm font-semibold transition-colors">
+                          <Link href="/contact" className="inline-block bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-md text-sm font-semibold transition-colors">
                             {interaction.status === "Limited Seats" ? "Register" : "Register"}
-                          </button>
+                          </Link>
                         ) : (
                           <span className="text-gray-500 text-sm">{interaction.status}</span>
                         )}

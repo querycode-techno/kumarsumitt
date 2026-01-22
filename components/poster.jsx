@@ -6,12 +6,16 @@ const Poster = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const posterImages = [
+    '/assets/poster/ramleela.jpeg',
+    '/assets/poster/soloMime.jpeg',
+    '/assets/poster/juliusnew.jpeg',
+    '/assets/poster/kinglear.jpeg',
     '/assets/poster/mungeruilalKeHaseenSapne.jpeg',
     '/assets/poster/juliuscaesar.jpeg',
     '/assets/poster/asYouLikeIt.jpeg',
     '/assets/poster/balaRamayanam.jpeg',
-    '/assets/poster/malgudiDays.jpeg',
-    '/assets/poster/ayyoPapam.jpeg',
+    // '/assets/poster/malgudiDays.jpeg',
+    // '/assets/poster/ayyoPapam.jpeg',
     '/assets/poster/Patolbabufilmstar.jpeg',
     '/assets/poster/OYLM3464.PNG',
     '/assets/poster/SITARAM.jpeg',

@@ -151,6 +151,22 @@ const institutionVisits = [
     description: "Promoting international understanding through arts education",
     image: "/assets/institute/r.webp",
   },
+  {
+    institution: "Amity University",
+    location: "Tashkent, Uzbekistan",
+    type: "University",
+    programs: ["Acting Training", "Theatre Workshops", "Cultural Exchange"],
+    description: "International collaboration and theatre education programs",
+    image: "/assets/institute/amityuzb.webp",
+  },
+  {
+    institution: "Alan International School",
+    location: "Shymkent, Kazakhstan",
+    type: "School",
+    programs: ["Theatre-in-Education", "Student Development", "Creative Expression"],
+    description: "Educational theatre programs for international school students",
+    image: "/assets/institute/alan.webp",
+  },
 ]
 
 const keyContributions = [

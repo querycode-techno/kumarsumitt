@@ -168,14 +168,15 @@ export default function PhotosVideosPage() {
           className="absolute inset-0 w-full h-full"
           style={{
             backgroundImage: 'url("/gallery/new/banner.jpg")',
-            backgroundSize: "cover",
+            backgroundSize: "contain",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
+            backgroundColor: "#000",
           }}
         />
 
         {/* Overlay Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
 
         {/* Content */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
@@ -185,7 +186,7 @@ export default function PhotosVideosPage() {
             </h1>
             <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-green-500 to-pink-500 mx-auto rounded-full mb-6 md:mb-8" />
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-justify px-2">
-              Photos and videos from our performances and events
+              Photos and videos from kumar sumitt's performances and events
             </p>
           </div>
         </div>
@@ -426,17 +427,17 @@ export default function PhotosVideosPage() {
             {/* Close Button */}
             <button
               onClick={closeModal}
-              className="absolute top-20 right-6 z-[60] bg-black/80 text-white p-4 rounded-full hover:bg-black transition-colors shadow-xl border-2 border-white/20"
+              className="absolute top-32 right-20 z-[60] bg-black/80 text-white p-3 rounded-full hover:bg-black transition-colors shadow-xl border border-white/20"
             >
-              <X className="h-7 w-7" />
+              <X className="h-5 w-5" />
             </button>
 
-            {/* YouTube Video Container */}
-            <div className="relative w-full max-w-4xl aspect-video">
+            {/* YouTube Video Container - Perfectly centered with responsive sizing */}
+            <div className="relative w-[90vw] max-w-3xl aspect-video">
               <iframe
                 src={selectedVideo.iframeUrl}
                 title={selectedVideo.title || "Video"}
-                className="w-full h-full rounded-lg"
+                className="w-full h-full rounded-lg shadow-2xl"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -444,14 +445,14 @@ export default function PhotosVideosPage() {
             </div>
 
             {/* Video Info */}
-            <div className="absolute bottom-4 left-4 right-4 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6 text-white rounded-lg">
+            {/* <div className="absolute bottom-4 left-4 right-4 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-4 text-white rounded-lg">
               <div className="flex items-center gap-4 text-sm text-gray-300">
                 <div className="flex items-center gap-1">
                   <Video className="h-4 w-4" />
                   {selectedVideo.role}
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       )}

@@ -1,6 +1,6 @@
 export const stage = [
   {
-    id: "1a",
+    id: "1",
     name: "Backstage work",
     language: "Hindi",
     playwright: "Backstage work",
@@ -10,7 +10,7 @@ export const stage = [
     organization: "Premchand Rangshala, Patna"
   },
   {
-    id: "1",
+    id: "2",
     name: "Pakar",
     language: "Hindi",
     playwright: "Pardesi Ram Verma",
@@ -20,7 +20,7 @@ export const stage = [
     organization: "Theatre unit"
   },
   {
-    id: "2",
+    id: "3",
     name: "Janwasa",
     language: "Hindi",
     playwright: "Rabindra Bharti",
@@ -30,7 +30,7 @@ export const stage = [
     organization: "Theatre unit"
   },
   {
-    id: "3",
+    id: "4",
     name: "Mujhe Kaha Le Aye ho columbus",
     language: "Hindi",
     playwright: "Sanjay Ganesh",
@@ -40,7 +40,7 @@ export const stage = [
     organization: "IPTA, Patna"
   },
   {
-    id: "4",
+    id: "5",
     name: "Vaidiki Hinsa Hinsa Na Bhawati",
     language: "Hindi",
     playwright: "Bhartendu Harishchandra",
@@ -50,7 +50,7 @@ export const stage = [
     organization: "IPTA, Patna"
   },
   {
-    id: "5",
+    id: "6",
     name: "Mai Bihar Hoo",
     language: "Hindi",
     playwright: "Shrikant",
@@ -60,7 +60,7 @@ export const stage = [
     organization: "IPTA, Patna"
   },
   {
-    id: "6",
+    id: "7",
     name: "Bhoma",
     language: "Hindi",
     playwright: "Badal Sircar",
@@ -70,7 +70,7 @@ export const stage = [
     organization: "IPTA Patna"
   },
   {
-    id: "7",
+    id: "8",
     name: "Tesar Ghor",
     language: "Maithili",
     playwright: "Dr. Arvind Akku",
@@ -80,7 +80,7 @@ export const stage = [
     organization: "Chetna Samiti"
   },
   {
-    id: "8",
+    id: "9",
     name: "Bahut Bara Sawal",
     language: "Hindi",
     playwright: "Mohan Rakesh",
@@ -90,7 +90,7 @@ export const stage = [
     organization: "IPTA, Patna"
   },
   {
-    id: "9",
+    id: "10",
     name: "Faas",
     language: "Maithili",
     playwright: "Shailesh Guha Niyogi",
@@ -100,7 +100,7 @@ export const stage = [
     organization: "Bhangima"
   },
   {
-    id: "10",
+    id: "11",
     name: "Supna Ka Sapna",
     language: "Hindi",
     playwright: "Shahid Anwar",
@@ -110,7 +110,7 @@ export const stage = [
     organization: "IPTA, Patna"
   },
   {
-    id: "11",
+    id: "12",
     name: "Ye daur Hai Kiski",
     language: "Hindi",
     playwright: "Jan Natya Manch 'Delhi'",
@@ -120,7 +120,7 @@ export const stage = [
     organization: "IPTA, Patna"
   },
   {
-    id: "12",
+    id: "13",
     name: "Silent Evening",
     language: "Mime",
     playwright: "Kamal Naskar",
@@ -130,7 +130,7 @@ export const stage = [
     organization: "Bihar Art Theatre"
   },
   {
-    id: "13",
+    id: "14",
     name: "Bhagdat Ka Hathi",
     language: "Hindi",
     playwright: "Srinjay",
@@ -140,7 +140,7 @@ export const stage = [
     organization: "IPTA, Patna"
   },
   {
-    id: "14",
+    id: "15",
     name: "Ma Pravish",
     language: "Maithili",
     playwright: "Uday Narayan Singh",
@@ -150,7 +150,7 @@ export const stage = [
     organization: "Bhangima"
   },
   {
-    id: "15",
+    id: "16",
     name: "Gabarghichor",
     language: "Bhojpuri",
     playwright: "Bhikhari Thakur",
@@ -160,7 +160,7 @@ export const stage = [
     organization: "IPTA, Patna"
   },
   {
-    id: "16",
+    id: "17",
     name: "Mime Show",
     language: "Silent",
     playwright: "Kamal Naskar",
@@ -170,7 +170,7 @@ export const stage = [
     organization: "Bihar Art Theatre"
   },
   {
-    id: "17",
+    id: "18",
     name: "Gadhe Ki Barat",
     language: "Hindi",
     playwright: "Haribhai Wadgaonkar",
@@ -180,7 +180,7 @@ export const stage = [
     organization: "Bihar Doordarshan"
   },
   {
-    id: "18",
+    id: "19",
     name: "Show on Gopal Singh Nepali",
     language: "Hindi Dance Drama",
     playwright: "N.N. Pandey",
@@ -190,7 +190,7 @@ export const stage = [
     organization: "DD Bharti"
   },
   {
-    id: "19",
+    id: "20",
     name: "Gopa",
     language: "Hindi Dance Drama",
     playwright: "Dr. Arun kumar sinha",
@@ -200,7 +200,7 @@ export const stage = [
     organization: "Kala Jagran, Patna"
   },
   {
-    id: "20",
+    id: "21",
     name: "Images of Life",
     language: "Mime",
     playwright: "Kamal Naskar",
@@ -210,7 +210,7 @@ export const stage = [
     organization: "Sangeet Shikkhshaytan"
   },
   {
-    id: "21",
+    id: "22",
     name: "Ye Bhi Hinsa Hai",
     language: "Hindi",
     playwright: "Sanjay Sinha",
@@ -220,7 +220,7 @@ export const stage = [
     organization: "IPTA, Patna"
   },
   {
-    id: "22",
+    id: "23",
     name: "Raktkalyan",
     language: "Hindi",
     playwright: "Girish Karnad",
@@ -230,7 +230,7 @@ export const stage = [
     organization: "IPTA, Patna"
   },
   {
-    id: "23",
+    id: "24",
     name: "Nanga Raja",
     language: "Hindi",
     playwright: "Alakhnandan",
@@ -240,7 +240,7 @@ export const stage = [
     organization: "IPTA, Patna"
   },
   {
-    id: "24",
+    id: "25",
     name: "Gonu Jha Urfa Gyan Jhak Khissa",
     language: "Maithili",
     playwright: "Kunal",
@@ -250,7 +250,7 @@ export const stage = [
     organization: "Bhangima"
   },
   {
-    id: "25",
+    id: "26",
     name: "Adhishthata",
     language: "Maithili",
     playwright: "Rohini Raman Jha",
@@ -260,7 +260,7 @@ export const stage = [
     organization: "Chetna Samiti"
   },
   {
-    id: "26",
+    id: "27",
     name: "Adbhut Saiyog",
     language: "Maithili",
     playwright: "Kumar Gagan",
@@ -270,7 +270,7 @@ export const stage = [
     organization: "Bhangima"
   },
   {
-    id: "27",
+    id: "28",
     name: "Court Martial",
     language: "Hindi",
     playwright: "Swadesh Deepak",
@@ -280,7 +280,7 @@ export const stage = [
     organization: "NSD, Sikkim"
   },
   {
-    id: "28",
+    id: "29",
     name: "Mrichkatik",
     language: "Hindi",
     playwright: "Shudrak",
@@ -290,7 +290,7 @@ export const stage = [
     organization: "NSD, Sikkim"
   },
   {
-    id: "29",
+    id: "30",
     name: "Dakghar",
     language: "Multilingual",
     playwright: "Rabindranath Tagore",
@@ -300,7 +300,7 @@ export const stage = [
     organization: "NSD, Sikkim"
   },
   {
-    id: "30",
+    id: "31",
     name: "Caucasian chalk circle",
     language: "Hindi",
     playwright: "Bertolt Brecht",
@@ -310,7 +310,7 @@ export const stage = [
     organization: "NSD, Sikkim"
   },
   {
-    id: "31",
+    id: "32",
     name: "Andhwishvash",
     language: "Hindi",
     playwright: "Mrinal Boruah",
@@ -320,7 +320,7 @@ export const stage = [
     organization: "NSD, Sikkim"
   },
   {
-    id: "32",
+    id: "33",
     name: "Beyond the Sound",
     language: "Mime",
     playwright: "Shivdas Ghodke",
@@ -330,7 +330,7 @@ export const stage = [
     organization: "Academy of Theatre arts, University of Mumbai"
   },
   {
-    id: "33",
+    id: "34",
     name: "Pathey",
     language: "Maithili",
     playwright: "Pd. Govind Jha",
@@ -340,7 +340,7 @@ export const stage = [
     organization: "Bhangima, Patna"
   },
   {
-    id: "34",
+    id: "35",
     name: "Supna ka Sapna",
     language: "Hindi",
     playwright: "Sahid Anwar",
@@ -350,7 +350,7 @@ export const stage = [
     organization: "IPTA, Patna"
   },
   {
-    id: "35",
+    id: "36",
     name: "Midas",
     language: "Hindi",
     playwright: "School Textbook",
@@ -360,7 +360,7 @@ export const stage = [
     organization: "IPTA, Rainbow Home, Kilkari, Patna"
   },
   {
-    id: "36",
+    id: "37",
     name: "Lodhanath",
     language: "Maithili",
     playwright: "Pd. Govind Jha",
@@ -370,7 +370,7 @@ export const stage = [
     organization: "Chetna Samiti"
   },
   {
-    id: "37",
+    id: "38",
     name: "Sristy 'source of power'",
     language: "Mime",
     playwright: "Kamal Naskar",
@@ -380,7 +380,7 @@ export const stage = [
     organization: "Sangeet Shikkhshaytan"
   },
   {
-    id: "38",
+    id: "39",
     name: "Kathak Lok",
     language: "Maithili",
     playwright: "Mahendra Malangia",
@@ -390,7 +390,7 @@ export const stage = [
     organization: "Bhangima, Patna"
   },
   {
-    id: "39",
+    id: "40",
     name: "Epic Night",
     language: "Mime",
     playwright: "Kamal Naskar",
@@ -400,7 +400,7 @@ export const stage = [
     organization: "Abhikalpana Kalavriksham"
   },
   {
-    id: "40",
+    id: "41",
     name: "Republic day",
     language: "Mime",
     playwright: "Students",
@@ -410,7 +410,7 @@ export const stage = [
     organization: "Deptt. of Music & Dramatics"
   },
   {
-    id: "41",
+    id: "42",
     name: "Panipuri Seller",
     language: "Mime",
     playwright: "Kamal Naskar",
@@ -420,7 +420,7 @@ export const stage = [
     organization: "Deptt. of Music & Dramatics"
   },
   {
-    id: "42",
+    id: "43",
     name: "DD LIve Interview",
     language: "Hindi",
     playwright: "Bihar Bihan",
@@ -430,7 +430,7 @@ export const stage = [
     organization: "Doordarshan, Bihar"
   },
   {
-    id: "43",
+    id: "44",
     name: "Court Martial",
     language: "Hindi",
     playwright: "Swadesh Deepak",
@@ -440,7 +440,7 @@ export const stage = [
     organization: "Deptt. of Music & Dramatics"
   },
   {
-    id: "44",
+    id: "45",
     name: "Nature & Tug Of war",
     language: "Mime",
     playwright: "Kamal Naskar",
@@ -450,7 +450,7 @@ export const stage = [
     organization: "Kilkari, Gaya"
   },
   {
-    id: "45",
+    id: "46",
     name: "DD Interview",
     language: "Hindi",
     playwright: "Kilol Programe",
@@ -460,7 +460,7 @@ export const stage = [
     organization: "Doordarshan, Bihar"
   },
   {
-    id: "46",
+    id: "47",
     name: "Pollution",
     language: "Mime",
     playwright: "Kamal Naskar",
@@ -470,7 +470,7 @@ export const stage = [
     organization: "Kanak Entertainments"
   },
   {
-    id: "47",
+    id: "48",
     name: "Relation",
     language: "Mime",
     playwright: "Kamal Naskar",
@@ -480,7 +480,7 @@ export const stage = [
     organization: "Kanak Entertainments"
   },
   {
-    id: "48",
+    id: "49",
     name: "The Rain",
     language: "Mime",
     playwright: "Kamal Naskar",
@@ -490,7 +490,7 @@ export const stage = [
     organization: "Bihar Art Theatre"
   },
   {
-    id: "49",
+    id: "50",
     name: "Warmth of a daughter",
     language: "English",
     playwright: "William Shakespeare",
@@ -500,7 +500,7 @@ export const stage = [
     organization: "Sri Prakash Synergy School"
   },
   {
-    id: "50",
+    id: "51",
     name: "The mall & Favor",
     language: "Mime",
     playwright: "Students",
@@ -510,7 +510,7 @@ export const stage = [
     organization: "Academy of Theatre arts"
   },
   {
-    id: "51",
+    id: "52",
     name: "Gandhi",
     language: "Mime",
     playwright: "Students",
@@ -520,7 +520,7 @@ export const stage = [
     organization: "St. Xavier's College"
   },
   {
-    id: "52",
+    id: "53",
     name: "DD Interview",
     language: "Hindi",
     playwright: "Udan Programe",
@@ -530,7 +530,7 @@ export const stage = [
     organization: "Doordarshan, Bihar"
   },
   {
-    id: "53",
+    id: "54",
     name: "Save Earth Mother Nature",
     language: "Mime",
     playwright: "Students",
@@ -540,7 +540,7 @@ export const stage = [
     organization: "St. Xavier's College"
   },
   {
-    id: "54",
+    id: "55",
     name: "Acting & Mime online show",
     language: "Hindi & Mime",
     playwright: "Students",
@@ -550,7 +550,7 @@ export const stage = [
     organization: "Kilkari, Gaya"
   },
   {
-    id: "55",
+    id: "56",
     name: "Motherhood",
     language: "Mime",
     playwright: "Students",
@@ -560,7 +560,7 @@ export const stage = [
     organization: "Academy of Theatre arts, University of Mumbai"
   },
   {
-    id: "56",
+    id: "57",
     name: "Julius Caesar",
     language: "English",
     playwright: "William Shakespeare",
@@ -570,7 +570,7 @@ export const stage = [
     organization: "Sri Prakash Synergy School"
   },
   {
-    id: "57",
+    id: "58",
     name: "Sadako & 1000 Cranes",
     language: "English",
     playwright: "Japanese story",
@@ -580,7 +580,7 @@ export const stage = [
     organization: "Sri Prakash Synergy School"
   },
   {
-    id: "58",
+    id: "59",
     name: "Doraemon's Hub",
     language: "English",
     playwright: "Monica Joshi",
@@ -590,7 +590,7 @@ export const stage = [
     organization: "Sri Prakash Synergy School"
   },
   {
-    id: "59",
+    id: "60",
     name: "Children of God",
     language: "English",
     playwright: "Leo Tolstoy",
@@ -600,7 +600,7 @@ export const stage = [
     organization: "Sri Prakash Synergy School"
   },
   {
-    id: "60",
+    id: "61",
     name: "The Post Office",
     language: "English",
     playwright: "Rabindranath Tagore",
@@ -610,7 +610,7 @@ export const stage = [
     organization: "Sri Prakash Synergy School"
   },
   {
-    id: "61",
+    id: "62",
     name: "Dakghar",
     language: "Maithili",
     playwright: "Rabindranath Tagore",
@@ -620,7 +620,7 @@ export const stage = [
     organization: "Bhangima, Patna"
   },
   {
-    id: "62",
+    id: "63",
     name: "Dark City",
     language: "Mime",
     playwright: "Bhartendu Harishchandra",
@@ -630,7 +630,7 @@ export const stage = [
     organization: "Academy of Theatre arts, M.U"
   },
   {
-    id: "63",
+    id: "64",
     name: "Sita in Exile",
     language: "Mime",
     playwright: "Based on Ramayana",
@@ -640,7 +640,7 @@ export const stage = [
     organization: "Academy of Theatre arts, M.U"
   },
   {
-    id: "64",
+    id: "65",
     name: "Life",
     language: "Mime Festival",
     playwright: "Kamal Naskar",
@@ -650,7 +650,7 @@ export const stage = [
     organization: "Kanak Entertainments"
   },
   {
-    id: "65",
+    id: "66",
     name: "Men & Women",
     language: "Mime Festival",
     playwright: "Kamal Naskar",
@@ -660,7 +660,7 @@ export const stage = [
     organization: "Kanak Entertainments"
   },
   {
-    id: "66",
+    id: "67",
     name: "Gulliver in Marvel Land",
     language: "English",
     playwright: "Indira & Shesha Sri",
@@ -670,7 +670,7 @@ export const stage = [
     organization: "Sri Prakash Synergy School"
   },
   {
-    id: "67",
+    id: "68",
     name: "Bhuvana Vijayam",
     language: "Telugu",
     playwright: "Based on Ashtadiggajas",
@@ -680,7 +680,7 @@ export const stage = [
     organization: "Sri Prakash Synergy School"
   },
   {
-    id: "68",
+    id: "69",
     name: "King Lear",
     language: "English",
     playwright: "William Shakespeare",
@@ -690,7 +690,7 @@ export const stage = [
     organization: "Sri Prakash Synergy School"
   },
   {
-    id: "69",
+    id: "70",
     name: "Vasudhaiv Kutumbhkam",
     language: "Multilingual",
     playwright: "Monica Joshi",
@@ -700,7 +700,7 @@ export const stage = [
     organization: "Sri Prakash Synergy School"
   },
   {
-    id: "70",
+    id: "71",
     name: "Next Generation",
     language: "English",
     playwright: "Kumar Sumitt",
@@ -710,7 +710,7 @@ export const stage = [
     organization: "Kilkari, Darbhanga"
   },
   {
-    id: "71",
+    id: "72",
     name: "Secret Gold",
     language: "Mime",
     playwright: "Kumar Sumitt",
@@ -720,7 +720,7 @@ export const stage = [
     organization: "Kilkari, Darbhanga"
   },
   {
-    id: "72",
+    id: "73",
     name: "King Lear",
     language: "English",
     playwright: "William Shakespeare",
@@ -730,7 +730,7 @@ export const stage = [
     organization: "Academy of Theatre arts, University of Mumbai"
   },
   {
-    id: "73",
+    id: "74",
     name: "Court martial",
     language: "Hindi",
     playwright: "Swadesh Deepak",
@@ -740,7 +740,7 @@ export const stage = [
     organization: "Academy of Theatre arts, University of Mumbai"
   },
   {
-    id: "74",
+    id: "75",
     name: "Biniya",
     language: "Maithili",
     playwright: "Ruskin Bond's Novel",
@@ -750,7 +750,7 @@ export const stage = [
     organization: "Bhangima, Patna"
   },
   {
-    id: "75",
+    id: "76",
     name: "Andhshakti",
     language: "Hindi",
     playwright: "IIT students",
@@ -760,7 +760,7 @@ export const stage = [
     organization: "IIT, Patna"
   },
   {
-    id: "76",
+    id: "77",
     name: "Mime Show",
     language: "Mime",
     playwright: "Scoopa students",
@@ -770,18 +770,8 @@ export const stage = [
     organization: "SCOOPA, Surat"
   },
   {
-    id: "77",
-    name: "Mandir",
-    language: "Hindi",
-    playwright: "Munsi Premchand",
-    character: "Direction",
-    direction: "Kumar Sumitt",
-    year: "2024",
-    organization: "SCOOPA, Surat"
-  },
-  {
     id: "78",
-    name: "Ramleela",
+    name: "Mandir",
     language: "Hindi",
     playwright: "Munsi Premchand",
     character: "Direction",
@@ -791,6 +781,16 @@ export const stage = [
   },
   {
     id: "79",
+    name: "Ramleela",
+    language: "Hindi",
+    playwright: "Munsi Premchand",
+    character: "Direction",
+    direction: "Kumar Sumitt",
+    year: "2024",
+    organization: "SCOOPA, Surat"
+  },
+  {
+    id: "80",
     name: "Mime Show",
     language: "Mime",
     playwright: "Students",
@@ -800,7 +800,7 @@ export const stage = [
     organization: "Wilson College, Mumbai"
   },
   {
-    id: "80",
+    id: "81",
     name: "Masha and the bear",
     language: "English",
     playwright: "Faculty SPSS",
@@ -810,7 +810,7 @@ export const stage = [
     organization: "Sri Prakash Educational Institutions, A.P"
   },
   {
-    id: "81",
+    id: "82",
     name: "Andher Nagari",
     language: "Hindi",
     playwright: "Bhartendu Harishchandra",
@@ -820,7 +820,7 @@ export const stage = [
     organization: "Sri Prakash Educational Institutions, A.P"
   },
   {
-    id: "82",
+    id: "83",
     name: "The Blue Umbrella",
     language: "English",
     playwright: "Ruskin Bond's Novel",
@@ -830,7 +830,7 @@ export const stage = [
     organization: "Sri Prakash Educational Institutions, A.P"
   },
   {
-    id: "83",
+    id: "84",
     name: "Merchant of Venice",
     language: "English",
     playwright: "William Shakespeare",
@@ -840,7 +840,7 @@ export const stage = [
     organization: "Sri Prakash Educational Institutions, A.P"
   },
   {
-    id: "84",
+    id: "85",
     name: "Doraemon's Hub Return",
     language: "English",
     playwright: "Monica Joshi",
@@ -850,7 +850,7 @@ export const stage = [
     organization: "Sri Prakash Educational Institutions, A.P"
   },
   {
-    id: "85",
+    id: "86",
     name: "Dakshinayanam",
     language: "Telugu",
     playwright: "Faculty SPSS",
@@ -860,7 +860,7 @@ export const stage = [
     organization: "Sri Prakash Educational Institutions, A.P"
   },
   {
-    id: "86",
+    id: "87",
     name: "Sita Ram 'Ramayan'",
     language: "Russian & Kazakh",
     playwright: "Based on Tulasidas Ramcharitmanas",
@@ -870,7 +870,7 @@ export const stage = [
     organization: "Kazakh National Academy of Choreography, Astana"
   },
   {
-    id: "87",
+    id: "88",
     name: "The Dark City",
     language: "Hindi",
     playwright: "Bhartendu Harishchandra",
@@ -880,7 +880,7 @@ export const stage = [
     organization: "Kilkari, Muzaffarpur"
   },
   {
-    id: "88",
+    id: "89",
     name: "Bullu Chatta",
     language: "Maithili",
     playwright: "Ruskin Bond's Novel",
@@ -890,7 +890,7 @@ export const stage = [
     organization: "Kilkari, Darbhanga"
   },
   {
-    id: "89",
+    id: "90",
     name: "DD Interview",
     language: "Hindi",
     playwright: "Udan Programe",
@@ -900,7 +900,7 @@ export const stage = [
     organization: "Doordarshan, Bihar"
   },
   {
-    id: "90",
+    id: "91",
     name: "The Dark City",
     language: "English",
     playwright: "Bhartendu Harishchandra",
@@ -910,7 +910,7 @@ export const stage = [
     organization: "Sri Prakash Educational Institutions, A.P"
   },
   {
-    id: "91",
+    id: "92",
     name: "Malgudi Days",
     language: "English",
     playwright: "R. K. Narayan",
@@ -920,7 +920,7 @@ export const stage = [
     organization: "Sri Prakash Educational Institutions, A.P"
   },
   {
-    id: "92",
+    id: "93",
     name: "Solo Mime Performances",
     language: "Mime",
     playwright: "Students",
@@ -930,7 +930,7 @@ export const stage = [
     organization: "Academy of Theatre Arts, Mumbai University"
   },
   {
-    id: "93",
+    id: "94",
     name: "Silent Evening",
     language: "Mime",
     playwright: "Students",
@@ -940,7 +940,7 @@ export const stage = [
     organization: "Academy of Theatre arts, University of Mumbai"
   },
   {
-    id: "94",
+    id: "95",
     name: "Kalyug ki Ramleela",
     language: "Hindi",
     playwright: "Munsi Premchand",
@@ -950,7 +950,7 @@ export const stage = [
     organization: "Kilkari, Saharsa"
   },
   {
-    id: "95",
+    id: "96",
     name: "Mime Show",
     language: "Mime",
     playwright: "Students",
@@ -960,7 +960,7 @@ export const stage = [
     organization: "Academy of Theatre arts, University of Mumbai"
   },
   {
-    id: "96",
+    id: "97",
     name: "Mandir",
     language: "Hindi",
     playwright: "Munsi Premchand",
@@ -970,7 +970,7 @@ export const stage = [
     organization: "Academy of Theatre arts, University of Mumbai"
   },
   {
-    id: "97",
+    id: "98",
     name: "Patol Babu Film Star",
     language: "Hindi",
     playwright: "Satyajit Ray",
@@ -980,7 +980,7 @@ export const stage = [
     organization: "Academy of Theatre arts, University of Mumbai"
   },
   {
-    id: "98",
+    id: "99",
     name: "Duvidha",
     language: "Hindi",
     playwright: "Vijaydan Detha",
@@ -990,7 +990,7 @@ export const stage = [
     organization: "Academy of Theatre arts, University of Mumbai"
   },
   {
-    id: "99",
+    id: "100",
     name: "Knotted Roots",
     language: "Mime",
     playwright: "Students of KNAA, Almaty",
@@ -1000,7 +1000,7 @@ export const stage = [
     organization: "Kazakh National Academy of Arts, Almaty"
   },
   {
-    id: "100",
+    id: "101",
     name: "KARMA based on Mahabharata",
     language: "Kazakh",
     playwright: "Kumar Sumitt",
@@ -1010,7 +1010,7 @@ export const stage = [
     organization: "Kazakh National Academy of Arts, Almaty"
   },
   {
-    id: "101",
+    id: "102",
     name: "Julius Caesar",
     language: "English",
     playwright: "William Shakespeare",
@@ -1020,7 +1020,7 @@ export const stage = [
     organization: "Sri Prakash Educational Institutions, A.P"
   },
   {
-    id: "102",
+    id: "103",
     name: "As You Like it",
     language: "English",
     playwright: "William Shakespeare",
@@ -1030,7 +1030,7 @@ export const stage = [
     organization: "Sri Prakash Educational Institutions, A.P"
   },
   {
-    id: "103",
+    id: "104",
     name: "Mungerilal ke Haseen Sapne",
     language: "Hindi",
     playwright: "Faculty SPSS",
@@ -1040,7 +1040,7 @@ export const stage = [
     organization: "Sri Prakash Educational Institutions, A.P"
   },
   {
-    id: "104",
+    id: "105",
     name: "Bal Ramayan",
     language: "English",
     playwright: "Based on TulasidasRamcharitmanas",
@@ -1050,7 +1050,7 @@ export const stage = [
     organization: "Sri Prakash Educational Institutions, A.P"
   },
   {
-    id: "105",
+    id: "106",
     name: "Malgudi Days Swami & Friends",
     language: "English",
     playwright: "R. K. Narayan",
@@ -1060,7 +1060,7 @@ export const stage = [
     organization: "Sri Prakash Educational Institutions, A.P"
   },
   {
-    id: "106",
+    id: "107",
     name: "Ayyopapam Kuyyomorro",
     language: "Telugu",
     playwright: "Divakara Babu Madabhushi",
@@ -1070,7 +1070,7 @@ export const stage = [
     organization: "Sri Prakash Educational Institutions, A.P"
   },
   {
-    id: "107",
+    id: "108",
     name: "Solo Performances",
     language: "Hindi & English",
     playwright: "Students",
@@ -1080,7 +1080,7 @@ export const stage = [
     organization: "Pracheen Kala Kendra, Mohali"
   },
   {
-    id: "108",
+    id: "109",
     name: "The Blue Umbrella",
     language: "Punjabi & Hindi",
     playwright: "Ruskin Bond's Novel",
@@ -1090,14 +1090,53 @@ export const stage = [
     organization: "Pracheen Kala Kendra, Mohali"
   },  
   {
-    id: "109",
+    id: "110",
     name: "Barka Saheb",
     language: "Maithili",
     playwright: "Lalan Thakur",
     character: "Churamani Jha",
     direction: "Rashmi Mishra",
     year: "2025",
-    organization: "Bhangima Patna"
+    organization: "Bhangima Patna"
+  },
+  {
+    id: "111",
+    name: "Julius Caesar",
+    language: "English",
+    playwright: "William Shakespeare",
+    character: "Direction",
+    direction: "Kumar Sumitt",
+    year: "2025",
+    organization: "KNAA, Almaty, Kazakhstan"
+  },
+  {
+    id: "112",
+    name: "King Lear",
+    language: "English",
+    playwright: "William Shakespeare",
+    character: "Direction",
+    direction: "Kumar Sumitt",
+    year: "2025",
+    organization: "Amity University, Tashkent, Uzbekistan"
+  },
+  {
+    id: "113",
+    name: "Baba dandot bacha jai siyaram",
+    language: "Maithili",
+    playwright: "Rishi Vashisht",
+    character: "Vishnu",
+    direction: "Avdhesh Jha",
+    year: "2025",
+    organization: "Bhangima, Patna"
+  },
+  {
+    id: "114",
+    name: "Anher Nagari",
+    language: "Maithili",
+    playwright: "Bhartendu Harishchandra",
+    character: "Guruji",
+    direction: "Kumar Sumitt",
+    year: "2025",
+    organization: "Bhangima Patna"
   }
-   
 ]

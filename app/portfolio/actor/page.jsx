@@ -188,7 +188,7 @@ export default function ActorPortfolioPage() {
             </h1>
             <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-green-500 to-pink-500 mx-auto rounded-full mb-6 md:mb-8" />
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-center px-2">
-              A dedicated actor, director, and theatre educator with over two decades of experience in Hindi, Maithili, and Bhojpuri theatre
+              A dedicated actor, director, and theatre educator with over two decades of experience in  theatre & cinema
             </p>
           </div>
         </div>
@@ -207,10 +207,10 @@ export default function ActorPortfolioPage() {
                   Kumar Sumitt began his artistic journey in Patna, Bihar, combining his academic background in Human Resources (PGDBA–MBA) with his passion for performance arts. With over two decades of experience, he specializes in Hindi, Maithili, and Bhojpuri theatre, along with Mimetic arts.
                 </p>
                 <p>
-                  His educational journey includes training at the National School of Drama (NSD), Sikkim, a one-year intensive program at the Academy of Theatre Arts, University of Mumbai, and an M.A. in Dramatics from L. N. Mithila University, Darbhanga.
+                  His educational journey includes training at the National School of Drama (NSD), Sikkim, a one-year intensive program at the Academy of Theatre Arts, University of Mumbai, and M.A. in Dramatics from L. N. Mithila University, Darbhanga.
                 </p>
                 <p>
-                  Currently pursuing his Ph.D. on "Acting Techniques of Bharata's Natyashastra and Stanislavsky's Realism on Stage and Cinema: An Analytical Study," his research has been featured in national and international journals.
+                  Currently pursuing his Ph.D. on "Acting Techniques of Bharata's Natyashastra and Stanislavsky's Realism on Stage and Cinema: An Analytical Study". His research has been featured in national and international journals.
                 </p>
               </div>
             </div>
@@ -220,7 +220,7 @@ export default function ActorPortfolioPage() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Drama className="h-5 w-5 text-green-500" />
-                  <span>70+ acclaimed stage productions</span>
+                  <span>100+ acclaimed stage productions</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Globe className="h-5 w-5 text-green-500" />

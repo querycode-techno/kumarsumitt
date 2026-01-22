@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import HomeSlider from "@/components/home-slider"
 import ProfessionalWork from "@/components/professional-work"
+import KumarSumittBio from "@/components/kumar-sumitt-bio"
 import AwardsAchievements from "@/components/awards-achievements"
 import EventsShows from "@/components/events-shows"
 import TrainingSessions from "@/components/training-sessions"
@@ -15,6 +16,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white">
       <Navbar />
       <HomeSlider />
+      <KumarSumittBio />
       <ProfessionalWork />
       <Poster />
       <AwardsAchievements />

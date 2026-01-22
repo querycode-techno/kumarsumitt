@@ -22,7 +22,7 @@ const portfolioImages = [
   },
   {
     id: 3,
-    src: "/assets/cc.jpg",
+    src: "/assets/cc.webp",
     alt: "Portfolio Image 3"
   },
   // {

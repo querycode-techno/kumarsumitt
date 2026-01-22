@@ -204,9 +204,9 @@ const nationalGalleryItems = [
     id: 20,
     type: "image",
     title: "Workshop Activity",
-    description: "Active workshop session with students",
+    description: "Discussion with Shri Yogesh Soman after students workshop",
     image: "/gallery/national/IMG-20220319-WA0003.jpg",
-    year: "2023",
+    year: "2002",
     venue: "Workshop Studio",
     category: "Workshop"
   },
@@ -397,7 +397,7 @@ export default function NationalTrainingPage() {
         {/* Background Image */}
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="/hero/b1.webp"
+            src="/gallery/national/IMG_1142.JPG"
             alt="National Training Background"
             fill
             className="object-cover"
@@ -426,10 +426,10 @@ export default function NationalTrainingPage() {
           
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              National Training Gallery
+            Training Sessions
             </h1>
             <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
-              Explore Kumar Sumitt's comprehensive national training sessions through photos and videos. Click on any item to view in detail.
+              Explore Kumar Sumitt's comprehensive training sessions through photos and videos.
             </p>
             
             <div className="flex flex-wrap justify-center gap-6 mb-8">

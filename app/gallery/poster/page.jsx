@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { Camera, Calendar, MapPin, Loader2, X, ChevronLeft, ChevronRight } from "lucide-react"
+import { Camera, Calendar, MapPin, Loader2, X, ChevronLeft, ChevronRight, ArrowUp, ArrowDown } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { posters } from "@/data/poster"
@@ -14,8 +14,10 @@ export default function PosterPage() {
   const [isLoading, setIsLoading] = useState(false)
   const [selectedImage, setSelectedImage] = useState(null)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [sortOrder, setSortOrder] = useState('asc')
 
-  const posterItems = posters
+  // Reverse array when desc is selected (last images first)
+  const posterItems = sortOrder === 'desc' ? [...posters].reverse() : posters
   
   const displayedItems = posterItems.slice(0, displayCount)
   const hasMoreItems = displayCount < posterItems.length
@@ -31,9 +33,10 @@ export default function PosterPage() {
   }
 
   // Handle image click to open modal
-  const handleImageClick = (item, index) => {
+  const handleImageClick = (item) => {
+    const actualIndex = posterItems.findIndex(p => p.id === item.id)
     setSelectedImage(item)
-    setCurrentImageIndex(index)
+    setCurrentImageIndex(actualIndex >= 0 ? actualIndex : 0)
   }
 
   // Close modal
@@ -74,30 +77,70 @@ export default function PosterPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative py-32 px-4 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white">
-        <div className="absolute inset-0 opacity-10">
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `url("/hero/b1.webp")`,
-              backgroundRepeat: "no-repeat",
-            }}
-            aria-hidden="true"
-          />
-        </div>
-        <div className="relative z-10 max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Posters & Artwork</h1>
-          <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
+
+      <section className="relative min-h-[50vh] md:min-h-screen flex items-center justify-center overflow-hidden ">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 w-full h-full"
+          style={{
+            backgroundImage: 'url("/hero/b1.webp")',
+            backgroundSize: "contain",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundColor: "#000",
+          }}
+        />
+
+        {/* Overlay Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+
+        {/* Content */}
+        <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
+          <div className="space-y-4 md:space-y-6">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6">
+                Posters & Artwork
+              </h1>
+            <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-green-500 to-pink-500 mx-auto rounded-full mb-6 md:mb-8" />
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-justify px-2">
             Explore Kumar Sumitt's collection of theatrical posters, film artwork, and creative designs showcasing artistic excellence.
-          </p>
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Filter Tabs */}
       <section className="py-8 px-4 bg-gray-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-wrap justify-center gap-3">
-            {/* The filter categories are removed, so this loop is no longer needed */}
+          <div className="flex flex-wrap justify-center items-center gap-4">
+            <span className="text-gray-700 font-medium">Sort Order:</span>
+            <button
+              onClick={() => {
+                setSortOrder('asc')
+                setDisplayCount(ITEMS_PER_PAGE)
+              }}
+              className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 ${
+                sortOrder === 'asc'
+                  ? 'bg-green-500 text-white shadow-lg'
+                  : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
+              }`}
+            >
+              <ArrowUp className="h-5 w-5" />
+              Up (First to Last)
+            </button>
+            <button
+              onClick={() => {
+                setSortOrder('desc')
+                setDisplayCount(ITEMS_PER_PAGE)
+              }}
+              className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 ${
+                sortOrder === 'desc'
+                  ? 'bg-green-500 text-white shadow-lg'
+                  : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
+              }`}
+            >
+              <ArrowDown className="h-5 w-5" />
+              Down (Last to First)
+            </button>
           </div>
         </div>
       </section>
@@ -115,11 +158,11 @@ export default function PosterPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {displayedItems.map((item, index) => (
+            {displayedItems.map((item) => (
               <div
                 key={item.id}
                 className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-100"
-                onClick={() => handleImageClick(item, index)}
+                onClick={() => handleImageClick(item)}
               >
                 <div className="relative aspect-[3/4] overflow-hidden">
                   <Image

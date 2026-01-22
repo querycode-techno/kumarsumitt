@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Film, Award, Users, PlayCircle, Globe, BookOpen, Theatre } from "lucide-react"
+// import { Film, Award, Users, PlayCircle, Globe, BookOpen, Theatre } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { stage } from "@/data/stage"
@@ -97,12 +97,12 @@ export default function DirectorPortfolioPage() {
   const years = [...new Set(stage.map(work => work.year))].sort()
 
   const filteredExperience = stage.filter(work => {
-    const matchesSearch = searchTerm === "" || 
+    const matchesSearch = searchTerm === "" ||
       work.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       work.playwright.toLowerCase().includes(searchTerm.toLowerCase()) ||
       work.character.toLowerCase().includes(searchTerm.toLowerCase()) ||
       work.organization.toLowerCase().includes(searchTerm.toLowerCase())
-    
+
     const matchesLanguage = filterLanguage === "" || work.language === filterLanguage
     const matchesYear = filterYear === "" || work.year === filterYear
 
@@ -131,7 +131,7 @@ export default function DirectorPortfolioPage() {
             <div className="max-w-4xl">
               <h1 className="text-6xl md:text-8xl font-bold text-white mb-6">Directorial Projects</h1>
               <p className="text-2xl text-gray-200 mb-8">
-                Kumar Sumitt: Two decades of artistic excellence in theatre direction and performance
+                Kumar Sumitt: Two decades of artistic excellence in theatre {/*performance*/}
               </p>
             </div>
           </div>
@@ -143,7 +143,7 @@ export default function DirectorPortfolioPage() {
         <div className="max-w-6xl mx-auto">
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-6">
-              Kumar Sumitt, a specialist in acting, has devoted over two decades to performance on stage and screen. While acting remains his primary passion and area of expertise, he has also directed a wide range of theatre productions across India and internationally, reflecting his multifaceted artistic vision and strong leadership.
+              Kumar Sumitt, a specialist in acting, has devoted over two decades on stage and screen. While acting remains his primary passion and area of expertise, he has also directed a wide range of theatre productions across India and internationally, reflecting his multifaceted artistic vision and strong leadership.
             </p>
             <p className="text-gray-700 mb-6">
               His directorial work spans multiple languages and styles, including Hindi, Maithili, Telugu, Punjabi, English, Kazakh, Russian, and Mime. These diverse projects not only showcase his creative versatility but also promote cross-cultural dialogue and artistic collaboration.
@@ -159,7 +159,7 @@ export default function DirectorPortfolioPage() {
             <h2 className="text-4xl font-bold text-gray-800">International Productions</h2>
             <Dialog className="mt-50">
               <DialogTrigger asChild>
-                <button 
+                <button
                   type="button"
                   className="inline-flex items-center px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg font-medium text-sm transition-colors"
                 >
@@ -175,15 +175,15 @@ export default function DirectorPortfolioPage() {
                     <span className="sr-only">Close</span>
                   </DialogClose>
                 </DialogHeader>
-                
+
                 <div className="overflow-y-auto max-h-[calc(85vh-10rem)]">
                   {/* Statistics Summary */}
-                  <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6 p-4 bg-gray-50 rounded-xl">
+                  {/* <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6 p-4 bg-gray-50 rounded-xl">
                     <div className="text-center p-3 bg-white rounded-lg shadow-sm">
                       <div className="text-2xl font-bold text-green-600">{totalShows}</div>
                       <div className="text-sm text-gray-600 mt-1">Total Shows</div>
                     </div>
-                    
+
                     <div className="text-center p-3 bg-white rounded-lg shadow-sm">
                       <div className="text-2xl font-bold text-green-600">{uniqueOrganizations}</div>
                       <div className="text-sm text-gray-600 mt-1">Organizations</div>
@@ -196,7 +196,7 @@ export default function DirectorPortfolioPage() {
                       <div className="text-2xl font-bold text-green-600">{actedShows}</div>
                       <div className="text-sm text-gray-600 mt-1">Shows Acted</div>
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* Filters */}
                   <div className="flex flex-col md:flex-row gap-3 mb-6 p-4 bg-white border rounded-xl shadow-sm">
@@ -271,7 +271,7 @@ export default function DirectorPortfolioPage() {
               </DialogContent>
             </Dialog>
           </div>
-          
+
           <div className="space-y-8">
             <div className="bg-white rounded-2xl p-8 shadow-xl">
               <h3 className="text-2xl font-bold mb-4">Sita Ram (2024)</h3>
@@ -284,6 +284,12 @@ export default function DirectorPortfolioPage() {
               <h3 className="text-2xl font-bold mb-4">Karma (2025)</h3>
               <p className="text-gray-700">
                 In March 2025, he visited the T.Z. Kazakh National Academy of Arts, Almaty, where he trained theatre students and directed 'Karma'—a powerful dramatic interpretation of the conversation between Krishna and Arjuna from the Indian epic Mahabharata, entirely performed in Kazakh.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 shadow-xl">
+              <h3 className="text-2xl font-bold mb-4">Julius Caesar (2025)</h3>
+              <p className="text-gray-700">
+              Directed in Kazakhstan at the T.Z. Kazakh National Academy of Arts, "Julius Caesar" brought Shakespeare’s classic to life with local students in English—highlighting cross-cultural theatre and creative collaboration.
               </p>
             </div>
           </div>

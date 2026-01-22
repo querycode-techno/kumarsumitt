@@ -113,6 +113,13 @@ const spiritualSites = [
         state: "Bihar",
         description: "Ancient shrine of divine energy",
         image: "/placeholder.jpg"
+      },
+      {
+        name: "Iskon Temple",
+        location: "Patna",
+        state: "Bihar",
+        description: "Sri Radha Banke Bihari Temple",
+        image: "/placeholder.jpg"
       }
     ]
   },
@@ -148,6 +155,13 @@ const spiritualSites = [
         state: "Maharashtra",
         description: "Shrine of divine abundance",
         image: "/placeholder.jpg"
+      },
+      {
+        name: "Iskon Temple",
+        location: "Mumbai",
+        state: "Maharashtra",
+        description: "Sri Radha Banke Bihari Temple",
+        image: "/no.webp",
       }
     ]
   },
@@ -226,16 +240,19 @@ export default function SpiritualPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative py-32 px-4 bg-gradient-to-br from-black via-gray-600 to-black text-white">
-      <div className="absolute inset-0 opacity-10">
+      <section className="relative py-32 px-4 bg-gradient-to-br from-black/30 via-gray-600/20 to-black/30 text-white">
+      <div className="absolute inset-0">
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: `url("/hero/b2.webp")`,
+              backgroundImage: `url("/hero/ab.jpg")`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
               backgroundRepeat: "no-repeat",
             }}
             aria-hidden="true"
           />
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
         <div className="relative z-10 max-w-6xl mx-auto">
           <div className="flex items-center mb-8">
@@ -245,8 +262,8 @@ export default function SpiritualPage() {
             </Link>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Spiritual Visits</h1>
-          <p className="text-xl text-gray-200 max-w-2xl">
-            A transformative journey through India's sacred landscapes, exploring the depths of spirituality and inner wisdom.
+          <p className="text-xl text-white max-w-2xl">
+            A transformative journey of Kumar Sumitt through India's sacred landscapes, exploring the depths of spirituality and inner wisdom.
           </p>
         </div>
       </section>
@@ -311,6 +328,7 @@ export default function SpiritualPage() {
                           <p className="font-semibold text-gray-800">{temple.name}</p>
                           <p className="text-sm text-gray-500">{temple.location}, {temple.state}</p>
                           <p className="text-sm text-gray-600 mt-1">{temple.description}</p>
+                          {/* <Image src={temple.image} alt={temple.name} width={100} height={100} /> */}
                         </div>
                       </div>
                     </li>

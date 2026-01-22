@@ -94,5 +94,29 @@ export const posters = [
     id: 19,
     image: "/assets/poster/litti_choka.png",
     title: "LITTI CHOKA"
+  },
+  {
+    id: 20,
+    image: "/assets/poster/p1.jpeg",
+    title: "अभिनय कार्यशाला"
+  },
+  {
+    id: 21,
+    image: "/assets/poster/juliuscaesar.jpeg",
+    title: "JULIUS CAESAR"
+  },
+  {
+    id: 22,
+    image: "/assets/poster/kinglear.jpeg",
+    title: "KING LEAR"
+  },
+  {
+    id: 23,
+    image: "/assets/poster/ramleela.jpeg",
+    title: "RAMLEELA"
   }
+ 
+  
+  
+
 ]

@@ -40,6 +40,24 @@ const professionalWork = [
     image: "/gallery/new/k.JPG",
     category: "Performance",
   },
+  {
+    id: 7,
+
+    image: "/gallery/new/l.jpeg",
+    category: "Performance",
+  },
+  {
+    id: 8,
+
+    image: "/gallery/new/m.jpeg",
+    category: "Performance",
+  },
+  {
+    id: 9,
+
+    image: "/gallery/new/n.jpeg",
+    category: "Performance",
+  },
 ]
 
 export default function ProfessionalWork() {

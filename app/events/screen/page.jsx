@@ -258,7 +258,7 @@ const upcomingReleases = [
     releaseDate: "2026",
     platform: "Film Festivals",
     type: "Hindi Short Film",
-    status: "Pre-Production",
+    status: "Post-Production",
   },
   {
     title: "Kirtan",
@@ -504,41 +504,46 @@ export default function ScreenPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative py-32 px-4 bg-gradient-to-br from-gray-500 via-gray-900 to-gray-600 text-white">
-        <div className="absolute inset-0 opacity-10">
+      <section className="relative min-h-[40vh]  py-16 md:py-32 px-4 text-white mb-32">
+        <div className="absolute inset-0">
           <div
-            className="absolute top-8 inset-0"
+            className="absolute inset-0 w-full h-full top-20"
             style={{
-              backgroundImage: `url("/gallery/new/banner2.JPG")`,
+              backgroundImage: `url("/gallery/new/banner2.webp")`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
             }}
             aria-hidden="true"
           />
         </div>
+        <div className="absolute inset-0 bg-black opacity-60" aria-hidden="true" />
         <div className="relative z-10 max-w-6xl mx-auto">
-          <div className="flex items-center mb-8">
+          <div className="flex items-center mb-6 md:mb-8">
             <Link href="/events" className="flex items-center text-white hover:text-gray-200 mr-4">
-              <ArrowLeft className="h-5 w-5 mr-2" />
+              <ArrowLeft className="h-4 w-4 md:h-5 md:w-5 mr-2" />
               Back to Events
             </Link>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">On Screen</h1>
-          <p className="text-xl text-gray-200">Step into the world of cinema with Kumar Sumitt's engaging on-screen performances, which reflect his range and storytelling depth.</p>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-2xl">On Screen</h1>
+          <p className="text-lg md:text-xl text-white mb-4 drop-shadow-lg">Step into the world of cinema with Kumar Sumitt's engaging on-screen performances, which reflect his range and storytelling depth.</p>
           
-          {/* Highlights Section */}
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white bg-opacity-10 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Versatile on-screen presence</h3>
+       
+          <div className="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+            <div className="bg-white bg-opacity-10 p-4 md:p-6 rounded-lg">
+              <h3 className="text-lg md:text-xl font-semibold mb-2">Versatile on-screen presence</h3>
             </div>
-            <div className="bg-white bg-opacity-10 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Compelling, socially conscious narratives</h3>
+            <div className="bg-white bg-opacity-10 p-4 md:p-6 rounded-lg">
+              <h3 className="text-lg md:text-xl font-semibold mb-2">Compelling, socially conscious narratives</h3>
             </div>
-            <div className="bg-white bg-opacity-10 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Engaging and emotive storytelling</h3>
+            <div className="bg-white bg-opacity-10 p-4 md:p-6 rounded-lg">
+              <h3 className="text-lg md:text-xl font-semibold mb-2">Engaging and emotive storytelling</h3>
             </div>
           </div>
         </div>
       </section>
+
+      
 
       {/* Featured Project */}
       <section className="py-16 px-4 bg-white">
