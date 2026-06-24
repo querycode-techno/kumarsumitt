@@ -6,6 +6,8 @@ const Poster = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const posterImages = [
+    '/assets/poster/kanyadan.jpeg',
+    '/assets/poster/kartavya.jpeg',
     '/assets/poster/ramleela.jpeg',
     '/assets/poster/soloMime.jpeg',
     '/assets/poster/juliusnew.jpeg',

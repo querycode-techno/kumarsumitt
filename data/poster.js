@@ -114,6 +114,16 @@ export const posters = [
     id: 23,
     image: "/assets/poster/ramleela.jpeg",
     title: "RAMLEELA"
+  },
+  {
+    id: 24,
+    image: "/assets/poster/kanyadan.jpeg",
+    title: "KANYADAN"
+  },
+  {
+    id: 25,
+    image: "/assets/poster/kartavya.jpeg",
+    title: "KARTAVYA"
   }
  
   
