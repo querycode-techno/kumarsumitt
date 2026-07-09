@@ -1,7 +1,7 @@
 "use client"
 
-import { Award, Users, MapPin, Eye, X, ChevronLeft, ChevronRight, Globe, BookOpen, Star } from "lucide-react"
-import { useState } from "react"
+import { Award, Users, MapPin, Eye, X, ChevronLeft, ChevronRight, Globe, BookOpen, Star, ChevronDown } from "lucide-react"
+import { useState, useEffect } from "react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import Image from "next/image"
@@ -214,10 +214,35 @@ const testimonials = [
 ]
 
 
+const sectionNav = [
+  { id: "about", label: "Educational Impact" },
+  { id: "institutions", label: "Institutions Visited" },
+  { id: "contributions", label: "Key Contributions" },
+  { id: "testimonials", label: "Testimonials" },
+]
 
 export default function InstitutionAwardsPage() {
   const [selectedImage, setSelectedImage] = useState(null)
   const [currentGalleryIndex, setCurrentGalleryIndex] = useState(0)
+  const [showInstitutionsPopup, setShowInstitutionsPopup] = useState(false)
+  const [highlightedInstitution, setHighlightedInstitution] = useState(null)
+
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
+
+  const scrollToInstitution = (index) => {
+    setHighlightedInstitution(index)
+    scrollToSection(`institution-${index}`)
+    setShowInstitutionsPopup(false)
+  }
+
+  useEffect(() => {
+    if (highlightedInstitution === null) return
+
+    const timer = setTimeout(() => setHighlightedInstitution(null), 3500)
+    return () => clearTimeout(timer)
+  }, [highlightedInstitution])
 
   const nextSlide = () => {
     setCurrentGalleryIndex((prev) => (prev + 1) % galleryItems.length)
@@ -262,8 +287,81 @@ export default function InstitutionAwardsPage() {
         </div>
       </section>
 
+      {/* Section Navigation */}
+      <nav
+        aria-label="Page sections"
+        className="sticky top-16 z-40 bg-gradient-to-r from-pink-50 via-white to-green-50 border-y-2 border-pink-100 shadow-md"
+      >
+        <div className="max-w-6xl mx-auto px-4 py-5 md:py-6">
+          <p className="text-center text-sm md:text-base font-bold text-gray-700 mb-4">
+            Jump to Section
+          </p>
+          <ul className="flex flex-wrap justify-center gap-3 md:gap-4">
+            {sectionNav.map((item) => (
+              <li
+                key={item.id}
+                className={item.id === "institutions" ? "relative" : undefined}
+                onMouseEnter={item.id === "institutions" ? () => setShowInstitutionsPopup(true) : undefined}
+                onMouseLeave={item.id === "institutions" ? () => setShowInstitutionsPopup(false) : undefined}
+              >
+                {item.id === "institutions" ? (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => setShowInstitutionsPopup((open) => !open)}
+                      className="inline-flex items-center gap-1.5 px-5 py-2.5 md:px-7 md:py-3 rounded-full text-sm md:text-base font-semibold transition-all shadow-md bg-gradient-to-r from-green-500 to-pink-500 text-white hover:from-green-600 hover:to-pink-600 hover:shadow-lg hover:scale-105"
+                    >
+                      {item.label}
+                      <ChevronDown className={`h-4 w-4 transition-transform ${showInstitutionsPopup ? "rotate-180" : ""}`} />
+                    </button>
+
+                    {showInstitutionsPopup && (
+                      <div className="absolute left-1/2 top-full z-50 w-[min(90vw,22rem)] -translate-x-1/2 pt-2">
+                        <div className="rounded-xl border border-gray-200 bg-white shadow-2xl">
+                        <div className="border-b border-gray-100 px-4 py-3">
+                          <p className="text-sm font-bold text-gray-800">All Institutions</p>
+                          <p className="text-xs text-gray-500">{institutionVisits.length} institutions — click to jump</p>
+                        </div>
+                        <ul className="max-h-72 overflow-y-auto py-1">
+                          {institutionVisits.map((visit, index) => (
+                            <li key={index}>
+                              <button
+                                type="button"
+                                onClick={() => scrollToInstitution(index)}
+                                className="w-full px-4 py-2.5 text-left transition-colors hover:bg-pink-50"
+                              >
+                                <span className="block text-sm font-medium text-gray-800 line-clamp-2">
+                                  {visit.institution}
+                                </span>
+                                <span className="mt-0.5 flex items-center text-xs text-gray-500">
+                                  <MapPin className="mr-1 h-3 w-3 shrink-0" />
+                                  {visit.location}
+                                </span>
+                              </button>
+                            </li>
+                          ))}
+                        </ul>
+                        </div>
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => scrollToSection(item.id)}
+                    className="px-5 py-2.5 md:px-7 md:py-3 rounded-full text-sm md:text-base font-semibold transition-all shadow-md bg-gradient-to-r from-green-500 to-pink-500 text-white hover:from-green-600 hover:to-pink-600 hover:shadow-lg hover:scale-105"
+                  >
+                    {item.label}
+                  </button>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+
       {/* About Section */}
-      <section className="py-20 px-4 bg-white relative">
+      <section id="about" className="py-20 px-4 bg-white relative scroll-mt-28">
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: 'url("/award-ceremony.png")' }}></div>
         <div className="relative z-10 max-w-6xl mx-auto">
           <div className="bg-gradient-to-br from-pink-50 to-gray-50 rounded-2xl p-12 shadow-xl border border-gray-100">
@@ -315,14 +413,19 @@ export default function InstitutionAwardsPage() {
       </section>
 
       {/* Institution Visits */}
-      <section className="py-20 px-4 bg-white">
+      <section id="institutions" className="py-20 px-4 bg-white scroll-mt-28">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-gray-800">Selected Institutions Visited/Visiting</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {institutionVisits.map((visit, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-gray-50 to-pink-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                id={`institution-${index}`}
+                className={`scroll-mt-36 rounded-xl shadow-lg overflow-hidden transition-all duration-500 transform hover:-translate-y-1 ${
+                  highlightedInstitution === index
+                    ? "ring-4 ring-pink-500 ring-offset-2 shadow-2xl scale-[1.03] bg-gradient-to-br from-pink-100 to-green-100"
+                    : "bg-gradient-to-br from-gray-50 to-pink-50 hover:shadow-xl"
+                }`}
               >
                 <div className="relative aspect-video bg-gray-200">
                   <img
@@ -377,7 +480,7 @@ export default function InstitutionAwardsPage() {
       </section>
 
       {/* Key Contributions */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section id="contributions" className="py-20 px-4 bg-gray-50 scroll-mt-28">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-gray-800 text-center">Key Contributions in These Visits</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -506,7 +609,7 @@ export default function InstitutionAwardsPage() {
       </section> */}
 
       {/* Testimonials and Certificates */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section id="testimonials" className="py-20 px-4 bg-gray-50 scroll-mt-28">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-gray-800 text-center">Testimonials and Certificates</h2>
           <div className="grid md:grid-cols-2 gap-8">

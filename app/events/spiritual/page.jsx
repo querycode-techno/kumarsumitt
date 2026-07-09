@@ -71,6 +71,12 @@ const spiritualSites = [
         state: "Rajasthan",
         description: "Rare shrine of the creator",
         image: "/placeholder.jpg"
+      },{
+        name: "Singheshwar Dham Mandir",
+        location: "Madhepura",
+        state: "Bihar",
+        description: "Sacred shrine of Lord Shiva",
+        image: "/placeholder.jpg"
       }
     ]
   },

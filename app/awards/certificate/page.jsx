@@ -80,8 +80,8 @@ export default function AwardsCertificatePage() {
           {/* Main Background Image with Overlay */}
           <div className="absolute inset-0">
             <Image 
-              src="/assets/certificates/IMG_0175_6_11zon.jpg" 
-              alt="Certificate Background" 
+              src="/assets/certificates/2022 Mumbai University.jpg" 
+              alt="Certificate Background"
               fill 
               className="object-cover opacity-15"
               priority

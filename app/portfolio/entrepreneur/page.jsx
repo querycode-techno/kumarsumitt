@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Building2, TrendingUp, Users, Target, Lightbulb, Award, Instagram, Facebook } from "lucide-react"
+import { Building2, TrendingUp, Users, Target, Lightbulb, Award, Instagram, Facebook, Linkedin } from "lucide-react"
 import Link from "next/link"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
@@ -21,8 +21,10 @@ const ventures = [
       "Nurturing Emerging Talent",
       "Distinguished Industry Contribution"
     ],
-    // Replace the problematic placeholder URLs with simple ones
     image: "/assets/kanak.jpg",
+    social: {
+      facebook: "https://www.facebook.com/share/1HUvzR8qUp/?mibextid=wwXIfr",
+    },
   },
   {
     id: 2,
@@ -43,7 +45,9 @@ const ventures = [
     image: "/school.jpeg",
     social: {
       instagram: "https://www.instagram.com/kumarsumittschoolofacting?igsh=ZTh1MTI4MGllMHNo&utm_source=qr",
-      facebook: "https://www.facebook.com/share/19B6fNF4kJ/?mibextid=wwXIfr"
+      facebook: "https://www.facebook.com/share/19B6fNF4kJ/?mibextid=wwXIfr",
+      x: "https://x.com/kssa_official",
+      linkedin: "https://www.linkedin.com/in/kumar-sumitt-school-of-acting-foundation-9137b5415/"
     }
   },
 ]
@@ -234,6 +238,35 @@ export default function EntrepreneurPortfolioPage() {
                             className="inline-flex items-center justify-center p-2.5 md:p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 hover:scale-110 transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg"
                           >
                             <Facebook className="h-4 w-4 md:h-5 md:w-5" />
+                          </Link>
+                        )}
+                        {venture.social.x && (
+                          <Link
+                            href={venture.social.x}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="X"
+                            className="inline-flex items-center justify-center p-2.5 md:p-3 bg-black text-white rounded-lg hover:bg-black/90 hover:scale-110 transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                              className="h-4 w-4 md:h-5 md:w-5"
+                              fill="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path d="M18.244 2H21l-6.51 7.44L22.5 22h-6.63l-5.19-6.82L4.72 22H2l7.02-8.02L1.5 2h6.8l4.7 6.2L18.244 2Zm-1.16 18h1.53L7.72 3.91H6.08L17.084 20Z" />
+                            </svg>
+                          </Link>
+                        )}
+                        {venture.social.linkedin && (
+                          <Link
+                            href={venture.social.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                            className="inline-flex items-center justify-center p-2.5 md:p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 hover:scale-110 transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg"
+                          >
+                            <Linkedin className="h-4 w-4 md:h-5 md:w-5" />
                           </Link>
                         )}
                       </div>

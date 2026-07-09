@@ -36,7 +36,7 @@ const screenProjects = [
     type: "Short Film",
     description: "A powerful Hindi short film showcasing resilience and determination.",
     platform: "Short Film",
-    role: "Lead Actor",
+    role: "",
     iframe: "https://www.youtube.com/embed/auO53iCgYK0?si=7TNtCOewIFwAXTF-",
     image: "/placeholder.svg",
   },
@@ -47,7 +47,7 @@ const screenProjects = [
     type: "Short Film",
     description: "A powerful Hindi short film showcasing resilience and determination.",
     platform: "Short Film",
-    role: "Lead Actor",
+    role: "",
     iframe: "https://www.youtube.com/embed/WqupanpPDiM?si=3OdvLsfs3AYkp6ya",
     image: "/placeholder.svg",
   },
@@ -58,7 +58,7 @@ const screenProjects = [
     type: "Short Film",
     description: "A powerful Hindi short film showcasing resilience and determination.",
     platform: "Short Film",
-    role: "Lead Actor",
+    role: "",
     iframe: "https://www.youtube.com/embed/CjPWxTa0Yv0?si=TMB2EtB4XB-t24JU",
     image: "/placeholder.svg",
   },
@@ -69,7 +69,7 @@ const screenProjects = [
     type: "Short Film",
     description: "A powerful Hindi short film showcasing resilience and determination.",
     platform: "Short Film",
-    role: "Lead Actor",
+    role: "",
     iframe: "https://www.youtube.com/embed/wx-xLWNFM2U?si=J4LzTQ8cHdYNMskx",
     image: "/placeholder.svg",
   },
@@ -80,7 +80,7 @@ const screenProjects = [
     type: "Short Film",
     description: "A powerful Hindi short film showcasing resilience and determination.",
     platform: "Film Festivals",
-    role: "Lead Actor",
+    role: "",
     iframe: "https://www.youtube.com/embed/h58awH_s37s?si=EVB1yxuzqajaLgYy",
     image: "/placeholder.svg",
   },
@@ -91,7 +91,7 @@ const screenProjects = [
     type: "Short Film",
     description: "A heartwarming Hindi short film about friendship and cultural bonds.",
     platform: "Film Festivals",
-    role: "Lead Actor",
+    role: "",
     iframe: "https://www.youtube.com/embed/-FKP9QhbxKo?si=HDzXsMxzRGhP4Ocv",
     image: "/placeholder.svg",
   },
@@ -102,7 +102,7 @@ const screenProjects = [
     type: "Video Film",
     description: "A compelling Hindi video film showcasing dramatic storytelling.",
     platform: "Digital Release",
-    role: "Lead Actor",
+    role: "",
     iframe: "https://www.youtube.com/embed/VIDEO_ID_8?si=example8",
     image: "/placeholder.svg",
   },
@@ -124,83 +124,8 @@ const screenProjects = [
     type: "Short Film",
     description: "A thought-provoking Hindi short film exploring duality.",
     platform: "Film Festivals",
-    role: "Lead Actor",
+    role: "",
     iframe: "https://www.youtube.com/embed/VIDEO_ID_8?si=example8",
-    image: "/placeholder.svg",
-  },
-]
-
-const musicVideos = [
-  {
-    id: 1,
-    title: "Kajra Ba Katar Goraki",
-    year: "2009",
-    language: "Bhojpuri",
-    type: "Music Video",
-    description: "A vibrant Bhojpuri music video showcasing cultural rhythms and performances.",
-    platform: "Music Channels",
-    role: "Lead Performer",
-    iframe: "https://www.youtube.com/embed/HQmghIEvAxk?si=GA_ZEg2i1dwYOybX",
-    image: "/placeholder.svg",
-  },
-  {
-    id: 2,
-    title: "Bhajnawali",
-    year: "2008",
-    language: "Bhojpuri",
-    type: "Music Video",
-    description: "Traditional Bhojpuri devotional music presentation.",
-    platform: "Music Channels",
-    role: "Lead Performer",
-    iframe: "https://www.youtube.com/embed/HQmghIEvAxk?si=GA_ZEg2i1dwYOybX",
-    image: "/placeholder.svg",
-  },
-  {
-    id: 3,
-    title: "Mai Baghwa Pe Bhaili Sawar",
-    year: "2008",
-    language: "Bhojpuri",
-    type: "Music Video",
-    description: "Folk-inspired Bhojpuri music performance.",
-    platform: "Music Channels",
-    role: "Lead Performer",
-    iframe: "https://www.youtube.com/embed/HQmghIEvAxk?si=GA_ZEg2i1dwYOybX",
-    image: "/placeholder.svg",
-  },
-  {
-    id: 4,
-    title: "Fair Lovely Lagala",
-    year: "2008",
-    language: "Bhojpuri",
-    type: "Music Video",
-    description: "Contemporary Bhojpuri entertainment music video.",
-    platform: "Music Channels",
-    role: "Lead Performer",
-    iframe: "https://www.youtube.com/embed/HQmghIEvAxk?si=GA_ZEg2i1dwYOybX",
-    image: "/placeholder.svg",
-  },
-  {
-    id: 5,
-    title: "Na Goriya Ke Aawe Sharam",
-    year: "2008",
-    language: "Bhojpuri",
-    type: "Music Video",
-    description: "Popular Bhojpuri music video with cultural elements.",
-    platform: "Music Channels",
-    role: "Lead Performer",
-    iframe: "https://www.youtube.com/embed/HQmghIEvAxk?si=GA_ZEg2i1dwYOybX",
-    image: "/placeholder.svg",
-  },
-  {
-    id: 6,
-    title: "Mai Doctorni Mai Masterni",
-    year: "2008",
-    language: "Bhojpuri",
-    type: "Music Video",
-    description: "Entertaining Bhojpuri music video with social message.",
-    platform: "Music Channels",
-    role: "Lead Performer",
-    iframe: "https://www.youtube.com/embed/HQmghIEvAxk?si=GA_ZEg2i1dwYOybX",
     image: "/placeholder.svg",
   },
 ]
@@ -812,71 +737,6 @@ export default function ScreenPage() {
                   <div className="flex justify-between items-center text-sm">
                     <span className="text-green-600 font-semibold">{project.platform}</span>
                     <span className="text-gray-500">{project.role}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* New Music Videos Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Music Videos (Bhojpuri)</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {musicVideos.map((video) => (
-              <div
-                key={video.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
-              >
-                <div className="relative aspect-video bg-gray-200">
-                  {video.iframe ? (
-                    <iframe
-                      width="100%"
-                      height="100%"
-                      src={video.iframe}
-                      title={`${video.title} - YouTube video player`}
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                      className="absolute inset-0 w-full h-full"
-                    />
-                  ) : (
-                    <>
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors cursor-pointer">
-                          <Play className="h-8 w-8 text-white ml-1" />
-                        </div>
-                      </div>
-                      {/* Placeholder Icon */}
-                      <div className="absolute inset-0 flex items-center justify-center opacity-20">
-                        <div className="w-16 h-16 bg-gray-300 rounded-lg flex items-center justify-center">
-                          <svg className="w-8 h-8 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                              fillRule="evenodd"
-                              d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </>
-                  )}
-                  <div className="absolute top-4 left-4 bg-blue-500 text-white px-3 py-1 rounded-md text-sm font-semibold">
-                    {video.type}
-                  </div>
-                  <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-md text-sm font-semibold">
-                    {video.year}
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{video.title}</h3>
-                  <p className="text-gray-600 text-sm mb-3 line-clamp-2">{video.description}</p>
-                  <div className="flex justify-between items-center text-sm">
-                    <span className="text-green-600 font-semibold">{video.platform}</span>
-                    <span className="text-gray-500">{video.role}</span>
                   </div>
                 </div>
               </div>

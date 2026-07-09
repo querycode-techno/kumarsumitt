@@ -28,7 +28,7 @@ const videoItems = [
   {
     id: "video-1",
     type: "video",
-    venue: "National Theatre",
+    venue: "Drama",
     role: "Kumar Sumitt",
     iframeUrl: "https://www.youtube.com/embed/WqupanpPDiM?si=3OdvLsfs3AYkp6ya",
     youtubeId: "WqupanpPDiM" // Add this property
@@ -36,7 +36,7 @@ const videoItems = [
   {
     id: "video-2",
     type: "video",
-    venue: "Feature Film",
+    venue: "Drama",
     role: "Kumar Sumitt",
     iframeUrl: "https://www.youtube.com/embed/auO53iCgYK0?si=7TNtCOewIFwAXTF- ",
     youtubeId: "auO53iCgYK0" // Add this property
@@ -44,7 +44,7 @@ const videoItems = [
   {
     id: "video-3",
     type: "video",
-    venue: "Arts Festival",
+    venue: "Drama",
     role: "Kumar Sumitt",
     iframeUrl: "https://www.youtube.com/embed/WqupanpPDiM?si=3OdvLsfs3AYkp6ya",
     youtubeId: "WqupanpPDiM" // Add this property
@@ -460,14 +460,10 @@ export default function PhotosVideosPage() {
       {/* Stats Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
             <div className="text-center">
               <div className="text-3xl font-bold text-green-500 mb-2">100+</div>
               <div className="text-gray-600">Performance Photos</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-pink-500 mb-2">3</div>
-              <div className="text-gray-600">Video Excerpts</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-500 mb-2">100+</div>

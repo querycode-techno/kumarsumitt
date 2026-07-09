@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ArrowLeft, ExternalLink, Star, Trophy, Globe, X } from "lucide-react"
+import { ArrowLeft, ExternalLink, Star, Trophy, Globe, X, Calendar, Sparkles } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import {
@@ -175,30 +175,6 @@ const pastPerformances = [
     type: "Maithili Drama",
     description: "A regional masterpiece performed in Maithili, celebrating local culture and traditions.",
     image: "/stage-biniya-maithili.png",
-  },
-]
-
-const upcomingShows = [
-  {
-    show: "Mime Show",
-    dates: "2024 - 2025",
-    venue: "International Venues",
-    city: "Global",
-    status: "In Development",
-  },
-  {
-    show: "Stage Play (Hindi & Maithili)",
-    dates: "2024 - 2025",
-    venue: "National Theatres",
-    city: "Multiple Cities",
-    status: "Pre-Production",
-  },
-  {
-    show: "Solo Show (Multilingual)",
-    dates: "2024 - 2025",
-    venue: "Cultural Centers",
-    city: "National Tour",
-    status: "Conceptualization",
   },
 ]
 
@@ -507,34 +483,34 @@ export default function StageShowsPage() {
       {/* Upcoming Shows */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Upcoming Shows</h2>
+          <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Upcoming Shows</h2>
+          <p className="text-center text-gray-500 mb-12 max-w-xl mx-auto">
+            New performances are being crafted — details will be announced here soon.
+          </p>
 
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead className="bg-green-500 text-white">
-                  <tr>
-                    <th className="px-6 py-4 text-left font-semibold">Show</th>
-                    <th className="px-6 py-4 text-left font-semibold">Dates</th>
-                    <th className="px-6 py-4 text-left font-semibold">Venue</th>
-                    <th className="px-6 py-4 text-left font-semibold">City</th>
-                    <th className="px-6 py-4 text-left font-semibold">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {upcomingShows.map((show, index) => (
-                    <tr key={index} className="border-b border-gray-200 hover:bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-800">{show.show}</td>
-                      <td className="px-6 py-4 text-gray-600">{show.dates}</td>
-                      <td className="px-6 py-4 text-gray-600">{show.venue}</td>
-                      <td className="px-6 py-4 text-gray-600">{show.city}</td>
-                      <td className="px-6 py-4">
-                        <span className="text-gray-500 text-sm">{show.status}</span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+              <div className="relative h-64 bg-gradient-to-br from-green-500 via-green-600 to-emerald-700 flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-0 opacity-10">
+                  <div className="absolute -top-10 -left-10 w-40 h-40 rounded-full bg-white" />
+                  <div className="absolute -bottom-16 -right-10 w-56 h-56 rounded-full bg-white" />
+                </div>
+                <div className="relative text-center text-white px-8">
+                  <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-full mb-5 backdrop-blur-sm">
+                    <Calendar className="h-10 w-10" />
+                  </div>
+                  <h3 className="text-4xl md:text-5xl font-bold mb-3 tracking-tight">Coming Soon</h3>
+                  <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-5 py-2 rounded-full text-sm font-medium">
+                    <Sparkles className="h-4 w-4" />
+                    Stay Tuned
+                  </div>
+                </div>
+              </div>
+              <div className="p-8 text-center">
+                <p className="text-gray-600 leading-relaxed">
+                  Exciting new mime shows, multilingual stage plays, and solo performances are in the works for audiences across India and beyond.
+                </p>
+              </div>
             </div>
           </div>
         </div>

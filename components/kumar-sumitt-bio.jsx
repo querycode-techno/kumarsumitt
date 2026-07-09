@@ -47,7 +47,7 @@ const timeline = [
     ]
   },
   {
-    year: "2020–Present",
+    year: "2020–2024",
     events: [
       "Continued active engagement in theatre practice, pedagogy, and research",
       "Pursuing Ph.D. (Final Year) on \"Acting Techniques of Bharata's Natyashastra and Stanislavsky's Realism on Stage and Cinema\"",
@@ -57,7 +57,7 @@ const timeline = [
     ]
   },
   {
-    year: "2024",
+    year: "2024-2025",
     events: [
       "Directed Sita Ram, a mythological play inspired by the Ramayana, in Kazakh and Russian, Astana, Kazakhstan",
       "Worked with ICCR and the Ministry of External Affairs, Government of India",
@@ -65,7 +65,7 @@ const timeline = [
     ]
   },
   {
-    year: "2025",
+    year: "2025-Present",
     events: [
       "Directed theatre productions in Kazakhstan and Uzbekistan",
       "Enacted in over 100 stage productions and more than 1,500 open-air performances",

@@ -123,13 +123,13 @@ export default function Footer() {
             </h3>
             <ul className="space-y-6">
               <li className="group">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors block">
+                <a href="https://www.facebook.com/share/1HUvzR8qUp/?mibextid=wwXIfr" className="text-gray-400 hover:text-white transition-colors block">
                   <span className="text-lg font-semibold">Kanak Entertainments</span>
                   <p className="text-sm text-rose-500 mt-1">Est. 2017</p>
                 </a>
               </li>
               <li className="group">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors block">
+                <a href="https://www.facebook.com/share/17GaT7bXuq/" className="text-gray-400 hover:text-white transition-colors block">
                   <span className="text-lg font-semibold">Kumar Sumitt School of Acting Foundation</span>
                   <p className="text-sm text-rose-500 mt-1">Est. 2025</p>
                 </a>
@@ -178,14 +178,7 @@ export default function Footer() {
 
               </div>
               <div className="flex items-center space-x-4 group">
-              <Mail className="h-5 w-5 text-gray-400 flex-shrink-0 group-hover:text-rose-500 transition-colors" />
-                <Link 
-                  href="mailto:contact@kumarsumitt.com" 
-                  className="text-gray-300 hover:text-rose-500 transition-colors"
-                >
-                  contact@kumarsumitt.com
-                </Link>
-
+             
               </div>
             </div>
           </div>

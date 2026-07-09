@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { ExternalLink, Users, Building } from "lucide-react"
+import { ExternalLink, Users, Building, Globe, Laptop } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
@@ -16,15 +16,15 @@ const ventures = [
     projects: "25+",
     image: "/assets/kanak.jpg",
   },
-  // {
-  //   name: "Kumar Sumitt School of Acting (KSSA)",
-  //   year: "2025",
-  //   description: "Premier acting school dedicated to nurturing the next generation of performers.",
-  //   website: "#",
-  //   employees: "15+",
-  //   projects: "100+ Students",
-  //   image: "/placeholder.svg?height=300&width=400&query=acting school classroom students",
-  // },
+  {
+    name: "Kumar Sumitt School of Acting (KSSA)",
+    year: "2025",
+    description: "Premier acting school dedicated to nurturing the next generation of performers.",
+    website: "#",
+    employees: "15+",
+    projects: "100+ Students",
+    image: "/school.jpeg",
+  },
 ]
 
 export default function EntrepreneurshipPage() {
@@ -174,7 +174,9 @@ export default function EntrepreneurshipPage() {
           
           <div className="grid gap-6 md:gap-8 md:grid-cols-2">
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 md:p-8 rounded-2xl">
-              <div className="text-3xl md:text-4xl mb-4">🌐</div>
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-indigo-100 mb-4">
+                <Globe className="h-7 w-7 text-indigo-600" />
+              </div>
               <h3 className="text-lg md:text-xl font-bold mb-4 text-gray-800">Global Theatre Academy</h3>
               <p className="text-gray-700 text-sm md:text-base text-justify">
                 Establishing an international platform for cross-cultural acting education, bringing together students and faculty from around the world.
@@ -182,7 +184,9 @@ export default function EntrepreneurshipPage() {
             </div>
             
             <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 md:p-8 rounded-2xl">
-              <div className="text-3xl md:text-4xl mb-4">📱</div>
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-purple-100 mb-4">
+                <Laptop className="h-7 w-7 text-purple-600" />
+              </div>
               <h3 className="text-lg md:text-xl font-bold mb-4 text-gray-800">Digital Learning Platform</h3>
               <p className="text-gray-700 text-sm md:text-base text-justify">
                 Creating online resources and virtual workshops to make traditional Indian theatre techniques accessible to global audiences.
@@ -191,57 +195,6 @@ export default function EntrepreneurshipPage() {
           </div>
         </div>
       </section>
-
-      {/* Coming Soon Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-indigo-50 to-purple-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent">
-              Coming Soon
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Exciting new venture on the horizon that will revolutionize theatre, cinema education and cultural exchange
-            </p>
-          </div>
-
-          <div className="max-w-2xl mx-auto">
-            {/* KSSA */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-              <div className="relative">
-                <div className="h-48 bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <div className="text-6xl mb-4">🎭</div>
-                    <div className="text-sm font-semibold bg-white/20 px-4 py-2 rounded-full">Coming Soon</div>
-                  </div>
-                </div>
-                <div className="absolute top-4 right-4 bg-gradient-to-r from-green-500 to-blue-500 text-white px-4 py-2 rounded-full text-sm font-bold">
-                  2025
-                </div>
-              </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold mb-4 text-gray-800">Kumar Sumitt School of Acting Foundation</h3>
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  Premier acting school dedicated to nurturing the next generation of performers with a unique blend of classical Indian techniques and modern international methods.
-                </p>
-                
-
-                {/* <div className="space-y-3">
-                  <h4 className="font-bold text-gray-800">Key Features:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {["Classical Indian Theatre", "Modern Acting Methods", "International Exchange", "Industry Partnerships"].map((feature, index) => (
-                      <span key={index} className="bg-gradient-to-r from-indigo-100 to-purple-100 text-gray-700 px-3 py-1 rounded-full text-sm">
-                        {feature}
-                      </span>
-                    ))}
-                  </div>
-                </div> */}
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </section>
-
       <Footer />
     </div>
   )

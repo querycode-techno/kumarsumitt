@@ -14,7 +14,6 @@ const filterCategories = [
   { id: "features", label: "Features" },
   { id: "news", label: "News" },
   { id: "reviews", label: "Reviews" },
-  { id: "profiles", label: "Profiles" },
 ]
 
 export default function PrintMediaPage() {
@@ -85,7 +84,7 @@ export default function PrintMediaPage() {
 
         {/* Content */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
-          <div className="space-y-4 md:space-y-6">
+          <div className="space-y-4 md:space-y-6 mt-32 ">
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6">
               Print Media
             </h1>

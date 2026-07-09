@@ -63,17 +63,17 @@ const upcomingProjects = [
   {
     title: "English Play",
     type: "International Project",
-    year: "2025"
+    year: ""
   },
   {
     title: "Hindi Play",
     type: "National Project",
-    year: "2026"
+    year: ""
   },
   {
     title: "Play",
     type: "National Project",
-    year: "2026"
+    year: ""
   }
 ]
 
@@ -289,7 +289,7 @@ export default function DirectorPortfolioPage() {
             <div className="bg-white rounded-2xl p-8 shadow-xl">
               <h3 className="text-2xl font-bold mb-4">Julius Caesar (2025)</h3>
               <p className="text-gray-700">
-              Directed in Kazakhstan at the T.Z. Kazakh National Academy of Arts, "Julius Caesar" brought Shakespeare’s classic to life with local students in English—highlighting cross-cultural theatre and creative collaboration.
+              Directed in Kazakhstan at the T.Z. Kazakh National Academy of Arts, "Julius Caesar" brought Shakespeare’s classic to life with indians students in English—highlighting cross-cultural theatre and creative collaboration.
               </p>
             </div>
           </div>
@@ -348,7 +348,7 @@ export default function DirectorPortfolioPage() {
                 {upcomingProjects.map((project, index) => (
                   <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                     <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                    <p className="text-gray-300">{project.type} | {project.year}</p>
+                    <p className="text-gray-300">{project.type}  {project.year}</p>
                   </div>
                 ))}
               </div>

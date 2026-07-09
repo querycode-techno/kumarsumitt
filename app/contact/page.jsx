@@ -101,7 +101,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">Address</h3>
                     <p className="text-gray-600">
-                    Kankarbagh, Kumrhar, Dabur road, Patna, Bihar, 800026, India
+                    Kankarbagh, Kumhrar, Dabur road, Patna, Bihar, 800026, India
                     </p>
                   </div>
                 </div>
@@ -126,8 +126,6 @@ export default function ContactPage() {
                     <h3 className="font-bold text-gray-800 mb-1">Email</h3>
                     <p className="text-gray-600">
                       kumarsumitt0099@gmail.com
-                      <br />
-                      contact@kumarsumitt.com
                     </p>
                   </div>
                 </div>
