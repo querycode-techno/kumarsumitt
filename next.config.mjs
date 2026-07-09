@@ -46,6 +46,13 @@ const nextConfig = {
   // Optimize CSS
   optimizeFonts: true,
   poweredByHeader: false,
+  webpack: (config, { dev }) => {
+    // Avoid Windows ENOENT cache rename errors during hot reload
+    if (dev && process.platform === 'win32') {
+      config.cache = { type: 'memory' }
+    }
+    return config
+  },
   async headers() {
     return [
       {
