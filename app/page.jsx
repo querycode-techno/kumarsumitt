@@ -5,6 +5,7 @@ import Footer from "@/components/footer"
 import HomeSlider from "@/components/home-slider"
 import ProfessionalWork from "@/components/professional-work"
 import KumarSumittBio from "@/components/kumar-sumitt-bio"
+import HomeScrollInvitations from "@/components/home-scroll-invitations"
 import AwardsAchievements from "@/components/awards-achievements"
 import EventsShows from "@/components/events-shows"
 import TrainingSessions from "@/components/training-sessions"
@@ -17,6 +18,7 @@ export default function HomePage() {
       <Navbar />
       <HomeSlider />
       <KumarSumittBio />
+      <HomeScrollInvitations />
       <ProfessionalWork />
       <Poster />
       <AwardsAchievements />

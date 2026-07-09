@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { Calendar } from "lucide-react"
 
@@ -135,28 +136,47 @@ export default function KumarSumittBio() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-12 md:mb-16"
         >
-          <div className="relative bg-white rounded-xl p-6 md:p-8 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-300">
-            {/* Decorative corner */}
-            <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-green-50 to-transparent rounded-bl-full"></div>
-            
-            <h3 className="text-xl md:text-2xl font-bold mb-5 text-gray-800 relative">
-              About Kumar Sumitt
-              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-gradient-to-r from-green-500 to-transparent"></span>
-            </h3>
-            
-            <div className="space-y-3.5 text-gray-700 leading-relaxed text-sm md:text-base text-justify relative z-10">
-              <p>
-                Kumar Sumitt is an Indian Actor, Director, Educator, Researcher, and Cultural Entrepreneur, with over two decades of distinguished contributions to Indian theatre, mimetic arts, and international stage practice. He began his artistic journey in Patna, Bihar, in 2004, and is an alumnus of the National School of Drama, Sikkim, with advanced training from the Academy of Theatre Arts, University of Mumbai, and an M.A. in Dramatics. He is currently in the final year of his Ph.D., researching the Acting Techniques of Bharata's Natyashastra and Stanislavsky's Realism on stage and cinema.
-              </p>
-              <p>
-                With over 100 stage productions, more than 1,500 open-air performances, and deep expertise in Mime and physical theatre, his creative work spans India and international platforms. As a director and educator, he has guided productions in multiple Indian and foreign languages, worked with ICCR and the Ministry of External Affairs, Government of India, participated in professional development workshops at Arena Stage, USA, and directed critically acclaimed productions in Kazakhstan and Uzbekistan.
-              </p>
-              <p>
-                A committed educator and mentor, Kumar Sumitt has served as visiting faculty at leading institutions, continually bridging traditional Indian performance theory with contemporary global practice. His performances and directorial ventures span Hindi, Maithili, Telugu, Punjabi, Kazakh, Russian, and non-verbal mimetic arts, blending cultural depth with expressive innovation.
-              </p>
-              <p>
-                Beyond the stage and classroom, he actively nurtures the next generation of artists through workshops and master classes, and has founded impactful ventures such as Kanak Entertainments (est. 2017) and the Kumar Sumitt School of Acting Foundation (est. 2025).
-              </p>
+          <div className="relative bg-white rounded-xl p-6 md:p-8 border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
+            <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-green-50 to-transparent rounded-bl-full" />
+
+            <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-start relative z-10">
+              <div>
+                <h3 className="text-xl md:text-2xl font-bold mb-5 text-gray-800 relative">
+                  About Kumar Sumitt
+                  <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-gradient-to-r from-green-500 to-transparent" />
+                </h3>
+
+                <div className="space-y-3.5 text-gray-700 leading-relaxed text-sm md:text-base text-justify">
+                  <p>
+                    Kumar Sumitt is an Indian Actor, Director, Educator, Researcher, and Cultural Entrepreneur, with over two decades of distinguished contributions to Indian theatre, mimetic arts, and international stage practice. He began his artistic journey in Patna, Bihar, in 2004, and is an alumnus of the National School of Drama, Sikkim, with advanced training from the Academy of Theatre Arts, University of Mumbai, and an M.A. in Dramatics. He is currently in the final year of his Ph.D., researching the Acting Techniques of Bharata's Natyashastra and Stanislavsky's Realism on stage and cinema.
+                  </p>
+                  <p>
+                    With over 100 stage productions, more than 1,500 open-air performances, and deep expertise in Mime and physical theatre, his creative work spans India and international platforms. As a director and educator, he has guided productions in multiple Indian and foreign languages, worked with ICCR and the Ministry of External Affairs, Government of India, participated in professional development workshops at Arena Stage, USA, and directed critically acclaimed productions in Kazakhstan and Uzbekistan.
+                  </p>
+                  <p>
+                    A committed educator and mentor, Kumar Sumitt has served as visiting faculty at leading institutions, continually bridging traditional Indian performance theory with contemporary global practice. His performances and directorial ventures span Hindi, Maithili, Telugu, Punjabi, Kazakh, Russian, and non-verbal mimetic arts, blending cultural depth with expressive innovation.
+                  </p>
+                  <p>
+                    Beyond the stage and classroom, he actively nurtures the next generation of artists through workshops and master classes, and has founded impactful ventures such as Kanak Entertainments (est. 2017) and the Kumar Sumitt School of Acting Foundation (est. 2025).
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex justify-center md:justify-end md:sticky md:top-28">
+                <div className="relative w-full max-w-xs md:max-w-sm">
+                  <div className="absolute -inset-2 bg-gradient-to-br from-green-100/40 via-stone-100/60 to-pink-100/40 rounded-2xl blur-lg" />
+                  <div className="relative rounded-xl overflow-hidden bg-gradient-to-b from-stone-50 to-neutral-100 border border-gray-100 shadow-md">
+                    <Image
+                      src="/assets/about/kumar-sumitt.png"
+                      alt="Kumar Sumitt"
+                      width={400}
+                      height={520}
+                      className="w-full h-auto object-cover object-top"
+                      priority
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>

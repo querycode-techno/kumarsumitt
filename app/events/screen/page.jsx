@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Play, Calendar, Clock, User, ExternalLink, Film, Tv, X } from "lucide-react"
+import { ArrowLeft, Play, Calendar, Clock, User, ExternalLink, Film, Tv } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import {
@@ -12,7 +12,6 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-  DialogClose,
 } from "@/components/ui/dialog.jsx"
 
 const featuredProject = {
@@ -488,10 +487,6 @@ export default function ScreenPage() {
               <DialogContent className="max-w-[85vw] w-full max-h-[85vh] p-6 overflow-hidden bg-white mt-11">
                 <DialogHeader className="mb-6 sticky top-0 bg-white z-50 pb-4 border-b">
                   <DialogTitle className="text-2xl font-bold text-gray-900">Complete Project History</DialogTitle>
-                  <DialogClose className="absolute right-6 top-6 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
-                    <X className="h-5 w-5" />
-                    <span className="sr-only">Close</span>
-                  </DialogClose>
                 </DialogHeader>
                 
                 <div className="overflow-y-auto max-h-[calc(85vh-10rem)]">

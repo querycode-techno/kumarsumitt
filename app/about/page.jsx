@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { User, Briefcase, Lightbulb, Heart } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
@@ -42,15 +43,38 @@ export default function AboutPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="flex items-center justify-center min-h-[40vh] py-28 px-4 bg-gradient-to-br from-blue-50 to-purple-50">
-        <div className="w-full max-w-6xl">
-          <div className="text-center mb-16 flex flex-col items-center justify-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              About Kumar Sumitt
-            </h1>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Discover the multifaceted personality behind the artist, entrepreneur, and visionary
-            </p>
+      <section className="relative overflow-hidden py-20 md:py-28 px-4 bg-gradient-to-br from-blue-50 via-stone-50 to-purple-50">
+        <div className="absolute inset-0 opacity-40 pointer-events-none">
+          <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-blue-100/50 to-transparent" />
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-stone-100/80 to-neutral-50/90" />
+        </div>
+
+        <div className="relative w-full max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+            <div className="text-center md:text-left">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                About Kumar Sumitt
+              </h1>
+              <p className="text-gray-600 text-lg max-w-xl md:mx-0 mx-auto leading-relaxed">
+                Discover the multifaceted personality behind the artist, entrepreneur, and visionary
+              </p>
+            </div>
+
+            <div className="relative flex justify-center md:justify-end">
+              <div className="relative w-full max-w-sm md:max-w-md">
+                <div className="absolute -inset-3 bg-gradient-to-br from-blue-200/30 via-stone-100/60 to-purple-200/30 rounded-3xl blur-xl" />
+                <div className="relative rounded-2xl overflow-hidden bg-gradient-to-b from-stone-50 to-neutral-100 shadow-xl border border-white/80">
+                  <Image
+                    src="/assets/about/kumar-sumitt.png"
+                    alt="Kumar Sumitt"
+                    width={480}
+                    height={640}
+                    className="w-full h-auto object-cover object-top"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
