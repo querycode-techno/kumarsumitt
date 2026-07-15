@@ -206,7 +206,7 @@ const testimonials = [
     
   },
   {
-    quote: "Kumar Sumitt's mime and acting sessions left a lasting impression on our students and teachers alike.",
+    quote: "Kumar Sumitt's mime and acting sessions left a lasting impression on our students and Mumbai University alike.",
     author: "Faculty",
     institution: "Academy of Theatre Arts, Mumbai",
     

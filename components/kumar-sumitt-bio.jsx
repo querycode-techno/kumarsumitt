@@ -167,7 +167,7 @@ export default function KumarSumittBio() {
                   <div className="absolute -inset-2 bg-gradient-to-br from-green-100/40 via-stone-100/60 to-pink-100/40 rounded-2xl blur-lg" />
                   <div className="relative rounded-xl overflow-hidden bg-gradient-to-b from-stone-50 to-neutral-100 border border-gray-100 shadow-md">
                     <Image
-                      src="/assets/about/kumar-sumitt.png"
+                      src="/assets/about1.jpg"
                       alt="Kumar Sumitt"
                       width={400}
                       height={520}

@@ -26,7 +26,7 @@ const videoItems = [
   {
     id: "video-1",
     type: "video",
-    title: "Kumar Sumitt Performance",
+    title: "Kumar Sumitt Speech ",
     venue: "Theatre",
     role: "Kumar Sumitt",
     iframeUrl: "https://www.youtube.com/embed/qCby-fcLJAw?rel=0&modestbranding=1",
@@ -35,7 +35,7 @@ const videoItems = [
   {
     id: "video-2",
     type: "video",
-    title: "Kumar Sumitt Performance",
+    title: "Kumar Sumitt Speech ",
     venue: "Theatre",
     role: "Kumar Sumitt",
     iframeUrl: "https://www.youtube.com/embed/xKFfL4Nv-ZI?rel=0&modestbranding=1",

@@ -129,7 +129,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="group">
-                <a href="https://www.facebook.com/share/17GaT7bXuq/" className="text-gray-400 hover:text-white transition-colors block">
+                <a href="https://share.google/Po7O6hHCirvMflUVf" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors block">
                   <span className="text-lg font-semibold">Kumar Sumitt School of Acting Foundation</span>
                   <p className="text-sm text-rose-500 mt-1">Est. 2025</p>
                 </a>

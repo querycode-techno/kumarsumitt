@@ -157,7 +157,7 @@ export default function PersonalDetailsPage() {
                 <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gray-800">About Kumar Sumitt</h2>
                 <div className="space-y-3 md:space-y-4 text-gray-600 leading-relaxed">
                   <p className="text-sm md:text-base text-justify">
-                    Kumar Sumitt (Sumit Kumar Thakur) is a versatile Actor, Director, Educator, Researcher and Entrepreneur who made significant contributions to the Indian Entertainment Industry. Born in a Hindu Brahmin family of the Mithila region (Madhubani) Bihar, Kumar's journey in the arts began from humble beginnings rooted in rich cultural traditions.
+                    Kumar Sumitt (Sumit Kumar Thakur) is a versatile Actor, Director, Educator, Researcher and Entrepreneur he made significant contributions to the Indian Entertainment Industry. Born in a Hindu Brahmin family of the Mithila region (Madhubani) Bihar, Kumar's journey in the arts began from humble beginnings rooted in rich cultural traditions.
                   </p>
                   <p className="text-sm md:text-base text-justify">
                     In his childhood, he shifted to Patna, the capital city of Bihar, where he continued his studies. At the age of 14, he was deeply inspired by a play staged during Kali Puja in Madhubani and simultaneously influenced by cinema in Patna. This pivotal moment led him to decide to make his career in Theatre, Cinema, and the Entertainment industry.
