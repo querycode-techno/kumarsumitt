@@ -7,10 +7,10 @@ import { X, Play } from "lucide-react"
 const events = [
   {
     id: 0,
-    title: "Supna Ka Sapna",
-    year: "2021",
+    title: "Kumar sumitt's Speech",
+    year: "2026",
     role: "Kumar Sumitt",
-    iframe: "https://www.youtube.com/embed/wx-xLWNFM2U?si=J4LzTQ8cHdYNMskx",
+    iframe: "https://www.youtube.com/embed/qCby-fcLJAw?si=Z5RBujtA-SGlxZKy",
   },
   {
     id: 1,

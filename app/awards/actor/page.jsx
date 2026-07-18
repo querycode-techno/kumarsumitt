@@ -10,11 +10,15 @@ const majorAwards = [
   {
     id: 0,
     title: "Certificate of Excellence - Summer Theatre Workshop",
-    description: "Recognized for excellence at the Summer Theatre Workshop 2026, organized by Pracheen Kala Kendra, highlighting Kumar Sumitt's dedication to theatre education and mentorship.",
+    year: "2026",
+    description:
+      "Recognized for excellence at the Summer Theatre Workshop 2026, organized by Pracheen Kala Kendra, highlighting Kumar Sumitt's dedication to theatre education and mentorship.",
     category: "Theatre Education",
     ceremony: "Pracheen Kala Kendra",
-    year: "2026",
-},
+    date: "2026",
+    icon: <Award className="h-8 w-8 text-white" />,
+    awardFile: "/assets/awards/5.jpeg",
+  },
   {
     id: 1,
     title: "Bihar Yuva Rangmanch Ratna Shri Samman",
