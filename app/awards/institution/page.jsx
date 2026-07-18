@@ -415,7 +415,7 @@ export default function InstitutionAwardsPage() {
       {/* Institution Visits */}
       <section id="institutions" className="py-20 px-4 bg-white scroll-mt-28">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-gray-800">Selected Institutions Visited/Visiting</h2>
+          <h2 className="text-3xl font-bold mb-12 text-gray-800">Selected Institutions Visited</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {institutionVisits.map((visit, index) => (
               <div
@@ -630,9 +630,6 @@ export default function InstitutionAwardsPage() {
                 </div>
               </div>
             ))}
-          </div>
-          <div className="text-center mt-8">
-            <p className="text-gray-600 italic">(You can gradually collect and display more testimonials here.)</p>
           </div>
         </div>
       </section>

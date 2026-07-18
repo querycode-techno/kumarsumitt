@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Mail, Phone, MapPin, Send, Facebook, Instagram, Linkedin } from "lucide-react"
 import { BsTwitterX } from "react-icons/bs";
+import Image from "next/image"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import Link from "next/link"
@@ -85,6 +86,17 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="space-y-8">
+              <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl shadow-lg">
+                <Image
+                  src="/assets/contact-portrait.png"
+                  alt="Kumar Sumitt"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
+                />
+              </div>
+
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-800">Contact Information</h2>
                 <p className="text-gray-600 mb-8 leading-relaxed">

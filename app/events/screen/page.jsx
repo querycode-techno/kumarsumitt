@@ -19,7 +19,7 @@ const featuredProject = {
   category: "Upcoming Film",
   description: 
     "A compelling narrative that explores the intricacies of modern relationships through the lens of tradition and contemporary values. Kumar Sumitt brings depth and authenticity to this socially conscious story.",
-  releaseDate: "2026",
+  releaseDate: "2027",
   platform: "Film Festivals & Theatrical Release",
   duration: "Coming Soon",
   director: "Coming Soon",
@@ -179,21 +179,21 @@ const tvInterviews = [
 const upcomingReleases = [
   {
     title: "Marriage: A Story of Kusum Keshav Malhotra",
-    releaseDate: "2026",
+    releaseDate: "2027",
     platform: "Film Festivals",
     type: "Hindi Short Film",
     status: "Post-Production",
   },
   {
     title: "Kirtan",
-    releaseDate: "2026",
+    releaseDate: "2027",
     platform: "Film Festivals",
     type: "Maithili Short Film",
     status: "Development",
   },
   {
     title: "Untitled Web Series",
-    releaseDate: "2026",
+    releaseDate: "2027",
     platform: "OTT Platform",
     type: "Web Series",
     status: "Development",
@@ -382,15 +382,15 @@ const allProjects = [
     "Name of the Project": "Rajhansa",
     "Language": "Hindi",
     "Fiction": "Feature film",
-    "Year": 2024,
-    "Company Release/Platform": "Elivate Films/Unreleased"
+    "Year": 2026,
+    "Company Release/Platform": "Elivate Films"
   },
   {
     "S.No.": 24,
     "Name of the Project": "Marriage 'Story of Kusum Keshav Malhotra'",
     "Language": "Hindi",
     "Fiction": "Short film",
-    "Year": 2026,
+    "Year": 2027,
     "Company Release/Platform": "Kanak Entertainments/Upcoming"
   }
 ]

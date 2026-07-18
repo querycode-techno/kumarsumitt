@@ -47,7 +47,7 @@ const experienceData = [
     year: "2016-Present",
     title: "Global Recognition & Advanced Research",
     role: "International Artist, Scholar & Master Educator",
-    description: "Completed M.A. (Dramatics) from University Department of Music and Dramatics, L. N. Mithila University, Darbhanga. Currently pursuing PhD in 'Acting Techniques of Bharata's Natyashastra and Stanislavski's Realism on stage and cinema: An Analytical study' (final year) from Manipur International University under supervision of Dr. Bidyananda Yumlembam Singh (Assistant Prof. MIU, Manipur) and co-supervision of Dr. Alima Moldakhmetova (Senior Lecturer) from T. Z. Kazakh National Academy of Arts, Almaty, Kazakhstan. Achieved remarkable theatre experience of acting in 100+ stage productions, excluding 1500+ open air performances and mime shows. Directed National and International projects in Hindi, Maithili, English, Telugu, Punjabi, Russian and Kazakh languages. As an acting mentor, trained more than 5000 youth in India and 200+ participants abroad.",
+    description: "Completed M.A. (Dramatics) from University Department of Music and Dramatics, L. N. Mithila University, Darbhanga. Currently pursuing PhD in 'Acting Techniques of Bharata's Natyashastra and Stanislavski's Realism on stage and cinema: An Analytical study' (final year) from Manipur International University under supervision of Dr. Bidyananda Yumlembam Singh (Associate Prof. MIU, Manipur) and co-supervision of Dr. Alima Moldakhmetova (Senior Lecturer) from T. Z. Kazakh National Academy of Arts, Almaty, Kazakhstan. Achieved remarkable theatre experience of acting in 100+ stage productions, excluding 1500+ open air performances and mime shows. Directed National and International projects in Hindi, Maithili, English, Telugu, Punjabi, Russian and Kazakh languages. As an acting mentor, trained more than 5000 youth in India and 200+ participants abroad.",
     projects: ["PhD Research Project", "International Collaborations", "Multi-language Theatre Direction", "Youth Training Programs", "Cross-Cultural Productions", "Academic Research Publications", "Cultural Ambassador Initiatives", "Sita Ram in Kazakh and Russian"],
     image: "/gallery/83.JPG",
     bgColor: "from-pink-50 to-orange-50"
@@ -114,6 +114,12 @@ const internationalProjects = [
     location: "Arena Stage, USA",
     description: "Attended teacher training workshops, bringing international best practices to Indian theatre education.",
     impact: "Educational Excellence"
+  },{
+    year: "2025",
+    project: "King lear and Julius Caesar - Shakespearean Adaptation",
+    location: "Uzbekistan, Kazakhstan",
+   description: "Directed acclaimed adaptations of Shakespeare's King Lear and Julius Caesar, modernizing timeless themes through culturally inspired performances for audiences across Central Asia.",
+    impact: "Global Theatre Innovation"
   }
 ]
 

@@ -206,7 +206,7 @@ const nationalGalleryItems = [
     title: "Workshop Activity",
     description: "Discussion with Shri Yogesh Soman after students workshop",
     image: "/gallery/national/IMG-20220319-WA0003.jpg",
-    year: "2002",
+    year: "2022",
     venue: "Workshop Studio",
     category: "Workshop"
   },
@@ -683,9 +683,6 @@ export default function NationalTrainingPage() {
           <p className="text-xl text-green-100 mb-8">
             Join thousands of actors who have enhanced their craft through these comprehensive training sessions.
           </p>
-          <button className="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Start Your Journey
-          </button>
         </div>
       </section>
 

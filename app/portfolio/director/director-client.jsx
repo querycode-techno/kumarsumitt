@@ -283,7 +283,13 @@ export default function DirectorPortfolioPage({ stage }) {
             <div className="bg-white rounded-2xl p-8 shadow-xl">
               <h3 className="text-2xl font-bold mb-4">Julius Caesar (2025)</h3>
               <p className="text-gray-700">
-              Directed in Kazakhstan at the T.Z. Kazakh National Academy of Arts, "Julius Caesar" brought Shakespeare’s classic to life with indians students in English—highlighting cross-cultural theatre and creative collaboration.
+              Directed in Kazakhstan at the T.Z. Kazakh National Academy of Arts, "Julius Caesar" brought Shakespeare’s classic to life with indians students in English—highlighting cross-cultural theatre and creative collaboration of Swami Vivekananda Cultural Centre, Embassy of India Astana .
+              </p>
+            </div>
+             <div className="bg-white rounded-2xl p-8 shadow-xl">
+              <h3 className="text-2xl font-bold mb-4">King Lear (2025)</h3>
+              <p className="text-gray-700">
+             Directed in Uzbekistan at the Amity University, Tashkent, King Lear brought Shakespeare’s classic to life with Indian students in English- highlighting cross-cultural theatre and creative collaboration.
               </p>
             </div>
           </div>

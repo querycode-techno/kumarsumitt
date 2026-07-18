@@ -8,6 +8,14 @@ import Footer from "@/components/footer"
 
 const majorAwards = [
   {
+    id: 0,
+    title: "Certificate of Excellence - Summer Theatre Workshop",
+    description: "Recognized for excellence at the Summer Theatre Workshop 2026, organized by Pracheen Kala Kendra, highlighting Kumar Sumitt's dedication to theatre education and mentorship.",
+    category: "Theatre Education",
+    ceremony: "Pracheen Kala Kendra",
+    year: "2026",
+},
+  {
     id: 1,
     title: "Bihar Yuva Rangmanch Ratna Shri Samman",
     year: "2025",
@@ -58,6 +66,13 @@ const majorAwards = [
 ]
 
 const timelineAwards = [
+  {
+    year: "2026",
+    title: "Certificate of Excellence",
+    organization: "Pracheen Kala Kendra",
+    description: "Recognised for excellence at the Summer Theatre Workshop 2026",
+    color: "bg-pink-500",
+  },
   {
     year: "2025",
     title: "Bihar Yuva Rangmanch Ratna Shri Samman",
