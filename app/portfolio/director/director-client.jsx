@@ -36,24 +36,19 @@ const notableDirections = [
 
 const pastProjects = [
   {
-    title: "Patol Babu, Film Star",
-    year: "2025",
-    language: "Hindi"
-  },
-  {
-    title: "Karma",
-    year: "2025",
-    language: "Kazakh"
-  },
-  {
-    title: "As You Like It",
-    year: "2025",
+    title: "Hamlet",
+    year: "2026",
     language: "English"
   },
   {
-    title: "The Blue Umbrella",
-    year: "2025",
-    language: "Punjabi & Hindi"
+    title: "Kartavya Path",
+    year: "2026",
+    language: "Hindi"
+  },
+  {
+    title: "Kanyadan",
+    year: "2026",
+    language: "Hindi & Punjabi"
   }
 ]
 
