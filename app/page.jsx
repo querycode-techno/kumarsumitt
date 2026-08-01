@@ -11,11 +11,13 @@ import EventsShows from "@/components/events-shows"
 import TrainingSessions from "@/components/training-sessions"
 import Portfolio from "@/components/portfolio"
 import Poster from "@/components/poster"
+import StagePromoPopup from "@/components/stage-promo-popup"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
+      <StagePromoPopup />
       <HomeSlider />
       <KumarSumittBio />
       <HomeScrollInvitations />

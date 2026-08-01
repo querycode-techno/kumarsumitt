@@ -85,7 +85,29 @@
   .text-balance {
     text-wrap: balance;
   }
-  /* Add your custom utility classes here */
+
+  .animate-stage-progress {
+    width: 0%;
+    animation-name: stage-progress;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes stage-progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-stage-progress {
+    animation: none !important;
+    width: 100% !important;
+  }
 }
 
 @keyframes float {
