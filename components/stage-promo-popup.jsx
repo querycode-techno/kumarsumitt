@@ -321,6 +321,17 @@ export default function StagePromoPopup() {
             </div>
           </div>
 
+          {/* Skip closes the promo popup; placed just above the contact footer */}
+          <div className="flex justify-center border-t border-pink-100 px-5 py-2">
+            <button
+              type="button"
+              onClick={dismiss}
+              className="rounded text-sm font-medium text-gray-500 underline-offset-2 transition-colors hover:text-gray-800 hover:underline focus:outline-none focus:ring-2 focus:ring-pink-500"
+            >
+              Skip
+            </button>
+          </div>
+
           <div className="flex items-center gap-2 border-t border-pink-100 bg-pink-50/90 px-5 py-3 text-xs text-pink-800 sm:text-sm">
             <Bell className="h-4 w-4 shrink-0 text-pink-600" aria-hidden="true" />
             <p>
